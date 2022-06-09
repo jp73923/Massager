@@ -1,0 +1,6 @@
+framework module BDMMyTargetAdapter {
+  umbrella header "BDMMyTargetAdapter-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		886CDA0D283F35710084DD32 /* PatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA0C283F35710084DD32 /* PatternVC.swift */; };
+		886CDA0F283F35940084DD32 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA0E283F35940084DD32 /* MainVC.swift */; };
+		886CDA11283F35AF0084DD32 /* SimpleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA10283F35AF0084DD32 /* SimpleVC.swift */; };
+		886CDA13283FEC840084DD32 /* LockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA12283FEC840084DD32 /* LockVC.swift */; };
+		886CDA15283FEFBA0084DD32 /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA14283FEFBA0084DD32 /* MusicVC.swift */; };
+		886CDA17283FF40E0084DD32 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA16283FF40E0084DD32 /* SettingVC.swift */; };
+		886CDA19283FF68F0084DD32 /* VibrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA18283FF68F0084DD32 /* VibrationVC.swift */; };
+		886EE8AB28524E8400FDE566 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886EE8AA28524E8400FDE566 /* StoreKit.framework */; };
+		88897E2628412C140023EEEC /* AppleHapticAudioPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88897E2428412C140023EEEC /* AppleHapticAudioPattern.swift */; };
+		88897E2728412C140023EEEC /* Vibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88897E2528412C140023EEEC /* Vibrator.swift */; };
+		88897E2A28412C550023EEEC /* Heartbeat.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 88897E2928412C550023EEEC /* Heartbeat.ahap */; };
+		888A50212847C2EF007C30C1 /* ThirdOnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888A50202847C2EF007C30C1 /* ThirdOnBoardingVC.swift */; };
+		888A50232847C6A5007C30C1 /* KeynamConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888A50222847C6A5007C30C1 /* KeynamConstants.swift */; };
+		88CD74802848F2BF0074C3A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD747F2848F2BF0074C3A6 /* ViewController.swift */; };
+		88E222712850DE5D00482715 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E222702850DE5C00482715 /* InAppPurchase.swift */; };
+		88E97CEE283E871300B33F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E97CED283E871300B33F18 /* AppDelegate.swift */; };
+		88E97CF2283E871300B33F18 /* CustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E97CF1283E871300B33F18 /* CustomTabbarVC.swift */; };
+		88E97CF5283E871300B33F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E97CF3283E871300B33F18 /* Main.storyboard */; };
+		88E97CF7283E871600B33F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E97CF6283E871600B33F18 /* Assets.xcassets */; };
+		88E97CFA283E871600B33F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E97CF8283E871600B33F18 /* LaunchScreen.storyboard */; };
+		88E97D22283E8A5900B33F18 /* sea.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88E97D03283E8A5900B33F18 /* sea.mp3 */; };
+		88E97D23283E8A5900B33F18 /* birds.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E97D04283E8A5900B33F18 /* birds.wav */; };
+		88E97D24283E8A5900B33F18 /* rain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E97D05283E8A5900B33F18 /* rain.wav */; };
+		88E97D25283E8A5900B33F18 /* rain2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88E97D06283E8A5900B33F18 /* rain2.mp3 */; };
+		88E97D26283E8A5900B33F18 /* fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88E97D07283E8A5900B33F18 /* fire.mp3 */; };
+		88F1DF9328413AB3004FF8A3 /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DF8A28413AB3004FF8A3 /* Spark.swift */; };
+		88F1DF9428413AB3004FF8A3 /* FaveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DF8B28413AB3004FF8A3 /* FaveIcon.swift */; };
+		88F1DF9528413AB3004FF8A3 /* FaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DF8C28413AB3004FF8A3 /* FaveButton.swift */; };
+		88F1DF9628413AB3004FF8A3 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DF8D28413AB3004FF8A3 /* Ring.swift */; };
+		88F1DF9728413AB3004FF8A3 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DF8F28413AB3004FF8A3 /* Geometry.swift */; };
+		88F1DF9828413AB3004FF8A3 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DF9028413AB3004FF8A3 /* Easing.swift */; };
+		88F1DF9928413AB3004FF8A3 /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DF9128413AB3004FF8A3 /* Init.swift */; };
+		88F1DF9A28413AB3004FF8A3 /* Constraints+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DF9228413AB3004FF8A3 /* Constraints+.swift */; };
+		E1C9836942597B7319144FE3 /* Pods_Massager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB00095EFEFA99BCBF199DD5 /* Pods_Massager.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31627B981447A4EBD412D124 /* Pods-Massager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.debug.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.debug.xcconfig"; sourceTree = "<group>"; };
+		886CDA0C283F35710084DD32 /* PatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternVC.swift; sourceTree = "<group>"; };
+		886CDA0E283F35940084DD32 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		886CDA10283F35AF0084DD32 /* SimpleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVC.swift; sourceTree = "<group>"; };
+		886CDA12283FEC840084DD32 /* LockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockVC.swift; sourceTree = "<group>"; };
+		886CDA14283FEFBA0084DD32 /* MusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
+		886CDA16283FF40E0084DD32 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		886CDA18283FF68F0084DD32 /* VibrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationVC.swift; sourceTree = "<group>"; };
+		886EE8AA28524E8400FDE566 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		88897E2428412C140023EEEC /* AppleHapticAudioPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleHapticAudioPattern.swift; sourceTree = "<group>"; };
+		88897E2528412C140023EEEC /* Vibrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vibrator.swift; sourceTree = "<group>"; };
+		88897E2928412C550023EEEC /* Heartbeat.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Heartbeat.ahap; sourceTree = "<group>"; };
+		888A50202847C2EF007C30C1 /* ThirdOnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnBoardingVC.swift; sourceTree = "<group>"; };
+		888A50222847C6A5007C30C1 /* KeynamConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeynamConstants.swift; sourceTree = "<group>"; };
+		88CD747F2848F2BF0074C3A6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88E222702850DE5C00482715 /* InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchase.swift; sourceTree = "<group>"; };
+		88E97CEA283E871300B33F18 /* Massager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Massager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E97CED283E871300B33F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88E97CF1283E871300B33F18 /* CustomTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarVC.swift; sourceTree = "<group>"; };
+		88E97CF4283E871300B33F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88E97CF6283E871600B33F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88E97CF9283E871600B33F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88E97CFB283E871600B33F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E97D03283E8A5900B33F18 /* sea.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sea.mp3; sourceTree = "<group>"; };
+		88E97D04283E8A5900B33F18 /* birds.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = birds.wav; sourceTree = "<group>"; };
+		88E97D05283E8A5900B33F18 /* rain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rain.wav; sourceTree = "<group>"; };
+		88E97D06283E8A5900B33F18 /* rain2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain2.mp3; sourceTree = "<group>"; };
+		88E97D07283E8A5900B33F18 /* fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire.mp3; sourceTree = "<group>"; };
+		88F1DF8A28413AB3004FF8A3 /* Spark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spark.swift; sourceTree = "<group>"; };
+		88F1DF8B28413AB3004FF8A3 /* FaveIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaveIcon.swift; sourceTree = "<group>"; };
+		88F1DF8C28413AB3004FF8A3 /* FaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaveButton.swift; sourceTree = "<group>"; };
+		88F1DF8D28413AB3004FF8A3 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		88F1DF8F28413AB3004FF8A3 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		88F1DF9028413AB3004FF8A3 /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		88F1DF9128413AB3004FF8A3 /* Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Init.swift; sourceTree = "<group>"; };
+		88F1DF9228413AB3004FF8A3 /* Constraints+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constraints+.swift"; sourceTree = "<group>"; };
+		CA116F3F3BAD6C29E3A3F731 /* Pods-Massager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.release.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.release.xcconfig"; sourceTree = "<group>"; };
+		DB00095EFEFA99BCBF199DD5 /* Pods_Massager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Massager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88E97CE7283E871300B33F18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C9836942597B7319144FE3 /* Pods_Massager.framework in Frameworks */,
+				886EE8AB28524E8400FDE566 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		788A7052F0BDDE153D4F91BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31627B981447A4EBD412D124 /* Pods-Massager.debug.xcconfig */,
+				CA116F3F3BAD6C29E3A3F731 /* Pods-Massager.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		886CDA1A283FFD9A0084DD32 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88CD747F2848F2BF0074C3A6 /* ViewController.swift */,
+				888A50202847C2EF007C30C1 /* ThirdOnBoardingVC.swift */,
+				88E97CF1283E871300B33F18 /* CustomTabbarVC.swift */,
+				886CDA0C283F35710084DD32 /* PatternVC.swift */,
+				886CDA0E283F35940084DD32 /* MainVC.swift */,
+				886CDA10283F35AF0084DD32 /* SimpleVC.swift */,
+				886CDA12283FEC840084DD32 /* LockVC.swift */,
+				886CDA14283FEFBA0084DD32 /* MusicVC.swift */,
+				886CDA16283FF40E0084DD32 /* SettingVC.swift */,
+				886CDA18283FF68F0084DD32 /* VibrationVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88897E2328412C140023EEEC /* Vibrator */ = {
+			isa = PBXGroup;
+			children = (
+				88897E2428412C140023EEEC /* AppleHapticAudioPattern.swift */,
+				88897E2528412C140023EEEC /* Vibrator.swift */,
+			);
+			path = Vibrator;
+			sourceTree = "<group>";
+		};
+		88897E2828412C550023EEEC /* Haptics */ = {
+			isa = PBXGroup;
+			children = (
+				88897E2928412C550023EEEC /* Heartbeat.ahap */,
+			);
+			path = Haptics;
+			sourceTree = "<group>";
+		};
+		88E2226F2850DE4D00482715 /* InAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				88E222702850DE5C00482715 /* InAppPurchase.swift */,
+			);
+			path = InAppPurchase;
+			sourceTree = "<group>";
+		};
+		88E97CE1283E871300B33F18 = {
+			isa = PBXGroup;
+			children = (
+				88E97CEC283E871300B33F18 /* Massager */,
+				88E97CEB283E871300B33F18 /* Products */,
+				788A7052F0BDDE153D4F91BC /* Pods */,
+				E1482D0F8355050B22AC4949 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88E97CEB283E871300B33F18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88E97CEA283E871300B33F18 /* Massager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88E97CEC283E871300B33F18 /* Massager */ = {
+			isa = PBXGroup;
+			children = (
+				88E97CED283E871300B33F18 /* AppDelegate.swift */,
+				888A50222847C6A5007C30C1 /* KeynamConstants.swift */,
+				88897E2328412C140023EEEC /* Vibrator */,
+				886CDA1A283FFD9A0084DD32 /* ViewControllers */,
+				88E97D01283E8A5900B33F18 /* Resources */,
+				88E97CF3283E871300B33F18 /* Main.storyboard */,
+				88E97CF6283E871600B33F18 /* Assets.xcassets */,
+				88E97CF8283E871600B33F18 /* LaunchScreen.storyboard */,
+				88E97CFB283E871600B33F18 /* Info.plist */,
+			);
+			path = Massager;
+			sourceTree = "<group>";
+		};
+		88E97D01283E8A5900B33F18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88E2226F2850DE4D00482715 /* InAppPurchase */,
+				88F1DF8928413AB3004FF8A3 /* FavAnimation */,
+				88897E2828412C550023EEEC /* Haptics */,
+				88E97D02283E8A5900B33F18 /* music */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		88E97D02283E8A5900B33F18 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				88E97D03283E8A5900B33F18 /* sea.mp3 */,
+				88E97D04283E8A5900B33F18 /* birds.wav */,
+				88E97D05283E8A5900B33F18 /* rain.wav */,
+				88E97D06283E8A5900B33F18 /* rain2.mp3 */,
+				88E97D07283E8A5900B33F18 /* fire.mp3 */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+		88F1DF8928413AB3004FF8A3 /* FavAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				88F1DF8A28413AB3004FF8A3 /* Spark.swift */,
+				88F1DF8B28413AB3004FF8A3 /* FaveIcon.swift */,
+				88F1DF8C28413AB3004FF8A3 /* FaveButton.swift */,
+				88F1DF8D28413AB3004FF8A3 /* Ring.swift */,
+				88F1DF8E28413AB3004FF8A3 /* Helpers */,
+			);
+			path = FavAnimation;
+			sourceTree = "<group>";
+		};
+		88F1DF8E28413AB3004FF8A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				88F1DF8F28413AB3004FF8A3 /* Geometry.swift */,
+				88F1DF9028413AB3004FF8A3 /* Easing.swift */,
+				88F1DF9128413AB3004FF8A3 /* Init.swift */,
+				88F1DF9228413AB3004FF8A3 /* Constraints+.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E1482D0F8355050B22AC4949 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				886EE8AA28524E8400FDE566 /* StoreKit.framework */,
+				DB00095EFEFA99BCBF199DD5 /* Pods_Massager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88E97CE9283E871300B33F18 /* Massager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E97CFE283E871600B33F18 /* Build configuration list for PBXNativeTarget "Massager" */;
+			buildPhases = (
+				70DB4BF2D1A270AF7205B690 /* [CP] Check Pods Manifest.lock */,
+				88E97CE6283E871300B33F18 /* Sources */,
+				88E97CE7283E871300B33F18 /* Frameworks */,
+				88E97CE8283E871300B33F18 /* Resources */,
+				6C24A6B164A024511E95B161 /* [CP] Embed Pods Frameworks */,
+				04756978995797D2380C3FD2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Massager;
+			productName = Massager;
+			productReference = 88E97CEA283E871300B33F18 /* Massager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88E97CE2283E871300B33F18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					88E97CE9283E871300B33F18 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 88E97CE5283E871300B33F18 /* Build configuration list for PBXProject "Massager" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88E97CE1283E871300B33F18;
+			productRefGroup = 88E97CEB283E871300B33F18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E97CE9283E871300B33F18 /* Massager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88E97CE8283E871300B33F18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E97D24283E8A5900B33F18 /* rain.wav in Resources */,
+				88E97CFA283E871600B33F18 /* LaunchScreen.storyboard in Resources */,
+				88E97CF7283E871600B33F18 /* Assets.xcassets in Resources */,
+				88E97D22283E8A5900B33F18 /* sea.mp3 in Resources */,
+				88E97D26283E8A5900B33F18 /* fire.mp3 in Resources */,
+				88E97CF5283E871300B33F18 /* Main.storyboard in Resources */,
+				88E97D25283E8A5900B33F18 /* rain2.mp3 in Resources */,
+				88897E2A28412C550023EEEC /* Heartbeat.ahap in Resources */,
+				88E97D23283E8A5900B33F18 /* birds.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04756978995797D2380C3FD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Massager/Pods-Massager-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Massager/Pods-Massager-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Massager/Pods-Massager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C24A6B164A024511E95B161 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Massager/Pods-Massager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Massager/Pods-Massager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Massager/Pods-Massager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70DB4BF2D1A270AF7205B690 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Massager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88E97CE6283E871300B33F18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886CDA15283FEFBA0084DD32 /* MusicVC.swift in Sources */,
+				88E222712850DE5D00482715 /* InAppPurchase.swift in Sources */,
+				886CDA17283FF40E0084DD32 /* SettingVC.swift in Sources */,
+				88E97CF2283E871300B33F18 /* CustomTabbarVC.swift in Sources */,
+				88F1DF9928413AB3004FF8A3 /* Init.swift in Sources */,
+				88CD74802848F2BF0074C3A6 /* ViewController.swift in Sources */,
+				888A50232847C6A5007C30C1 /* KeynamConstants.swift in Sources */,
+				88F1DF9428413AB3004FF8A3 /* FaveIcon.swift in Sources */,
+				88F1DF9328413AB3004FF8A3 /* Spark.swift in Sources */,
+				88F1DF9A28413AB3004FF8A3 /* Constraints+.swift in Sources */,
+				88F1DF9728413AB3004FF8A3 /* Geometry.swift in Sources */,
+				88897E2628412C140023EEEC /* AppleHapticAudioPattern.swift in Sources */,
+				886CDA19283FF68F0084DD32 /* VibrationVC.swift in Sources */,
+				88F1DF9628413AB3004FF8A3 /* Ring.swift in Sources */,
+				88F1DF9828413AB3004FF8A3 /* Easing.swift in Sources */,
+				88F1DF9528413AB3004FF8A3 /* FaveButton.swift in Sources */,
+				886CDA0F283F35940084DD32 /* MainVC.swift in Sources */,
+				88E97CEE283E871300B33F18 /* AppDelegate.swift in Sources */,
+				886CDA13283FEC840084DD32 /* LockVC.swift in Sources */,
+				886CDA11283F35AF0084DD32 /* SimpleVC.swift in Sources */,
+				886CDA0D283F35710084DD32 /* PatternVC.swift in Sources */,
+				888A50212847C2EF007C30C1 /* ThirdOnBoardingVC.swift in Sources */,
+				88897E2728412C140023EEEC /* Vibrator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88E97CF3283E871300B33F18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88E97CF4283E871300B33F18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88E97CF8283E871600B33F18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88E97CF9283E871600B33F18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88E97CFC283E871600B33F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88E97CFD283E871600B33F18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88E97CFF283E871600B33F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31627B981447A4EBD412D124 /* Pods-Massager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AA9Q3GP6BY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Massager/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Massager needs your calendar to provide personalised advertising experience tailored to you";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Massager needs your location for analytics and advertising purposes";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Massager needs your advertising identifier to provide personalised advertising experience tailored to you";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucky.vibro.relax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Development;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		88E97D00283E871600B33F18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA116F3F3BAD6C29E3A3F731 /* Pods-Massager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AA9Q3GP6BY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Massager/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Massager needs your calendar to provide personalised advertising experience tailored to you";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Massager needs your location for analytics and advertising purposes";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Massager needs your advertising identifier to provide personalised advertising experience tailored to you";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucky.vibro.relax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Development;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88E97CE5283E871300B33F18 /* Build configuration list for PBXProject "Massager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E97CFC283E871600B33F18 /* Debug */,
+				88E97CFD283E871600B33F18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88E97CFE283E871600B33F18 /* Build configuration list for PBXNativeTarget "Massager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E97CFF283E871600B33F18 /* Debug */,
+				88E97D00283E871600B33F18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88E97CE2283E871300B33F18 /* Project object */;
+}

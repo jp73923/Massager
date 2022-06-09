@@ -1,0 +1,6 @@
+framework module BDMAdColonyAdapter {
+  umbrella header "BDMAdColonyAdapter-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module BDMCriteoAdapter {
+  umbrella header "BDMCriteoAdapter-umbrella.h"
+
+  export *
+  module * { export * }
+}

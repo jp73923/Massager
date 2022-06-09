@@ -1,0 +1,6 @@
+framework module BDMVungleAdapter {
+  umbrella header "BDMVungleAdapter-umbrella.h"
+
+  export *
+  module * { export * }
+}

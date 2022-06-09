@@ -1,0 +1,18 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/APDFacebookAudienceAdapter
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BDMFacebookAdapter" "${PODS_CONFIGURATION_BUILD_DIR}/Protobuf" "${PODS_CONFIGURATION_BUILD_DIR}/StackIAB" "${PODS_CONFIGURATION_BUILD_DIR}/StackModules" "${PODS_ROOT}/APDFacebookAudienceAdapter/APDFacebookAudienceAdapter-2.11.1.2" "${PODS_ROOT}/Appodeal/Appodeal-2.11.1" "${PODS_ROOT}/BidMachine" "${PODS_ROOT}/FBAudienceNetwork/Static" "${PODS_ROOT}/StackAnalytics" "${PODS_ROOT}/StackIAB" "${PODS_ROOT}/StackModules" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Appodeal" "${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAudienceNetwork" "${PODS_XCFRAMEWORKS_BUILD_DIR}/StackAnalytics/Base" "${PODS_XCFRAMEWORKS_BUILD_DIR}/StackAnalytics/Crashes" "${PODS_XCFRAMEWORKS_BUILD_DIR}/StackModules/StackFoundation" "${PODS_XCFRAMEWORKS_BUILD_DIR}/StackModules/StackProductPresentation" "${PODS_XCFRAMEWORKS_BUILD_DIR}/StackModules/StackUIKit"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/APDFacebookAudienceAdapter/Headers"
+LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" "${PODS_XCFRAMEWORKS_BUILD_DIR}/APDFacebookAudienceAdapter" /usr/lib/swift
+OTHER_LDFLAGS = $(inherited) -l"APDFacebookAudienceAdapter" -framework "AVFoundation" -framework "AdSupport" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreMedia" -framework "CoreTelephony" -framework "Foundation" -framework "SafariServices" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "AdSupport" -weak_framework "CFNetwork" -weak_framework "CoreMotion" -weak_framework "CoreTelephony" -weak_framework "LocalAuthentication" -weak_framework "SafariServices" -weak_framework "SystemConfiguration" -weak_framework "VideoToolbox" -weak_framework "WebKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/APDFacebookAudienceAdapter
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
+VALID_ARCHS[sdk=iphoneos*] = arm64 armv7
+VALID_ARCHS[sdk=iphonesimulator*] = x86_64

@@ -1,0 +1,18 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/APDAdColonyAdapter
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BDMAdColonyAdapter" "${PODS_CONFIGURATION_BUILD_DIR}/Protobuf" "${PODS_CONFIGURATION_BUILD_DIR}/StackIAB" "${PODS_CONFIGURATION_BUILD_DIR}/StackModules" "${PODS_ROOT}/APDAdColonyAdapter/APDAdColonyAdapter-2.11.1.3" "${PODS_ROOT}/AdColony" "${PODS_ROOT}/Appodeal/Appodeal-2.11.1" "${PODS_ROOT}/BidMachine" "${PODS_ROOT}/StackAnalytics" "${PODS_ROOT}/StackIAB" "${PODS_ROOT}/StackModules" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AdColony" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Appodeal" "${PODS_XCFRAMEWORKS_BUILD_DIR}/StackAnalytics/Base" "${PODS_XCFRAMEWORKS_BUILD_DIR}/StackAnalytics/Crashes" "${PODS_XCFRAMEWORKS_BUILD_DIR}/StackModules/StackFoundation" "${PODS_XCFRAMEWORKS_BUILD_DIR}/StackModules/StackProductPresentation" "${PODS_XCFRAMEWORKS_BUILD_DIR}/StackModules/StackUIKit"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/APDAdColonyAdapter/Headers"
+LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" "${PODS_XCFRAMEWORKS_BUILD_DIR}/APDAdColonyAdapter" /usr/lib/swift
+OTHER_LDFLAGS = $(inherited) -l"APDAdColonyAdapter" -framework "AVFoundation" -framework "AdColony" -framework "AdSupport" -framework "AudioToolbox" -framework "CoreMedia" -framework "CoreServices" -framework "CoreTelephony" -framework "JavaScriptCore" -framework "MessageUI" -framework "SafariServices" -framework "StoreKit" -framework "SystemConfiguration" -weak_framework "AppTrackingTransparency" -weak_framework "Social" -weak_framework "StoreKit" -weak_framework "WatchConnectivity" -weak_framework "WebKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/APDAdColonyAdapter
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
+VALID_ARCHS[sdk=iphoneos*] = arm64 armv7
+VALID_ARCHS[sdk=iphonesimulator*] = x86_64

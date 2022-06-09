@@ -1,0 +1,27 @@
+explicit module BidMachine.Adapters {
+    header "BDMAdUnit.h"
+    header "BDMAdapterProtocol.h"
+    header "BDMNetworkProtocol.h"
+    header "NSError+BDMSdk.h"
+    header "BDMAdapterDefines.h"
+    export *
+}
+
+explicit module BidMachine.HeaderBidding {
+    header "BDMAdUnit.h"
+    header "BDMAdNetworkConfiguration.h"
+    header "BDMSdkConfiguration+HeaderBidding.h"
+    header "BDMRequest+HB.h"
+    header "BDMHBRequestProtocol.h"
+    export *
+}
+
+explicit module BidMachine.ExternalAdapterUtils {
+    header "BDMExternalAdapterConfigurationDefines.h"
+    header "BDMExternalAdapterConfigurationProtocol.h"
+    header "BDMExternalAdapterConfigurationBuilderProtocol.h"
+    header "BDMExternalAdapterConfiguration.h"
+    header "BDMExternalAdapterSDKController.h"
+    header "BDMExternalAdapterRequestController.h"
+    export *
+}

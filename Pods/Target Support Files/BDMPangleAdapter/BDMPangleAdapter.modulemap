@@ -1,0 +1,6 @@
+framework module BDMPangleAdapter {
+  umbrella header "BDMPangleAdapter-umbrella.h"
+
+  export *
+  module * { export * }
+}

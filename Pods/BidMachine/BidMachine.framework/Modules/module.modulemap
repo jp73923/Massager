@@ -1,0 +1,6 @@
+framework module BidMachine {
+  umbrella header "BidMachine.h"
+
+  export *
+  module * { export * }
+}

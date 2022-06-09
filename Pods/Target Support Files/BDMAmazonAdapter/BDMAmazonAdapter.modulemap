@@ -1,0 +1,6 @@
+framework module BDMAmazonAdapter {
+  umbrella header "BDMAmazonAdapter-umbrella.h"
+
+  export *
+  module * { export * }
+}
