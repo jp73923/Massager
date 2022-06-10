@@ -98,7 +98,6 @@ class PatternVC: UIViewController {
         case "Whirlpool":
             self.vibrationTimer.invalidate()
             self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.02, target: self, selector: #selector(self.whirlpool), userInfo: nil, repeats: true)
-            //Vibrator.shared.startVibrate(frequency: .low, loop: true)
             break
         case "Strom":
             self.vibrationTimer.invalidate()
@@ -120,7 +119,8 @@ class PatternVC: UIViewController {
             self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.wind), userInfo: nil, repeats: true)
             break
         case "Snowflake":
-            Vibrator.shared.startHaptic(named: PatternVC.heartbeatHapticFilename, loop: false)
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.wind), userInfo: nil, repeats: true)
             break
         case "Volcano":
             self.vibrationTimer.invalidate()
