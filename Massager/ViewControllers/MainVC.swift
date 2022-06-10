@@ -17,6 +17,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var btn4: UIButton!
     @IBOutlet weak var btn5: UIButton!
     @IBOutlet weak var vwBgHurricane: UIView!
+    @IBOutlet weak var bannerView: APDBannerView!
 
     var vibrationTimer1 = Timer()
     var vibrationTimer2 = Timer()
@@ -32,7 +33,11 @@ class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Appodeal.setBannerDelegate(self)
+       // Appodeal.setBannerDelegate(self)
+        
+        let bannerSize = kAPDAdSize320x50
+        bannerView.adSize = bannerSize
+        bannerView.loadAd()
 
         self.btn1.clipsToBounds = true
         self.btn1.layer.cornerRadius = 10.0
@@ -136,7 +141,9 @@ class MainVC: UIViewController {
             vibrationTimer5.invalidate()
             vibrationTimer5 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update5), userInfo: nil, repeats: true)
         }
-        self.playSound(soundName: APP_DELEGATE.musicSelected, soundExtension: APP_DELEGATE.musicExtensionSelected)
+        if APP_DELEGATE.musicSelected != "" {
+            self.playSound(soundName: APP_DELEGATE.musicSelected, soundExtension: APP_DELEGATE.musicExtensionSelected)
+        }
     }
     
     func playSound(soundName:String,soundExtension:String) {

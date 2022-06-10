@@ -19,6 +19,7 @@ target 'Massager' do
   pod 'APDVungleAdapter', '2.11.1.2'
   pod 'APDYandexAdapter', '2.11.1.1'
   pod 'liquid-swipe'
+  pod 'Appodeal'
   pod 'KDCircularProgress'
   # Pods for Massager
   

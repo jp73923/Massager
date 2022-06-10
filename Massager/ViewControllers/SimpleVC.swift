@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import Appodeal
 
 class SimpleVC: UIViewController {
     @IBOutlet weak var btnInputOutput: UIButton!
     @IBOutlet weak var vwInputOutput: UIView!
     @IBOutlet weak var sliderVibration: UISlider!
     @IBOutlet weak var sliderPauseTime: UISlider!
+  //  @IBOutlet weak var bannerView: APDBannerView!
 
     var vibrationTimer = Timer()
     var intensity = 1
@@ -22,7 +24,11 @@ class SimpleVC: UIViewController {
     @IBOutlet var musicButton: FaveButton?
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+      /*  super.viewDidLoad()
+        let bannerSize = kAPDAdSize320x50
+        bannerView.adSize = bannerSize
+        bannerView.loadAd()*/
+        
         self.vwInputOutput.clipsToBounds = true
         self.vwInputOutput.layer.cornerRadius = self.vwInputOutput.frame.size.width/2
         

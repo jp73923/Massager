@@ -537,6 +537,11 @@
                                     <action selector="sliderPauseTimeChanged:" destination="CRC-GE-wHh" eventType="valueChanged" id="Hq9-H6-p1f"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRb-cR-XJB" customClass="APDBannerView">
+                                <rect key="frame" x="47" y="658" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UME-DT-vMK"/>
                         <color key="backgroundColor" red="1" green="0.49411764705882355" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -761,6 +766,13 @@
                                     <action selector="btnMusicAction:" destination="Qeo-FX-c54" eventType="touchUpInside" id="TBd-Eh-sxF"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6HZ-8E-L5L" customClass="APDBannerView">
+                                <rect key="frame" x="0.0" y="658" width="414" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1kl-Ih-Eqd"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oR9-M9-pVb"/>
                         <color key="backgroundColor" red="1" green="0.49411764705882355" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -768,6 +780,9 @@
                             <constraint firstItem="cvd-Vg-D36" firstAttribute="centerX" secondItem="oYZ-cb-nl0" secondAttribute="centerX" id="0E1-c2-hmL"/>
                             <constraint firstItem="8Dh-cv-HBL" firstAttribute="centerX" secondItem="oYZ-cb-nl0" secondAttribute="centerX" id="1Gj-lP-cNU"/>
                             <constraint firstItem="oR9-M9-pVb" firstAttribute="trailing" secondItem="oYZ-cb-nl0" secondAttribute="trailing" id="8Yt-He-zWe"/>
+                            <constraint firstItem="6HZ-8E-L5L" firstAttribute="bottom" secondItem="oR9-M9-pVb" secondAttribute="bottom" id="B2Y-nL-3kj"/>
+                            <constraint firstItem="6HZ-8E-L5L" firstAttribute="leading" secondItem="oR9-M9-pVb" secondAttribute="leading" id="BVa-Td-Cjw"/>
+                            <constraint firstItem="oR9-M9-pVb" firstAttribute="trailing" secondItem="6HZ-8E-L5L" secondAttribute="trailing" id="G2v-wd-DXV"/>
                             <constraint firstItem="oR9-M9-pVb" firstAttribute="bottom" secondItem="oYZ-cb-nl0" secondAttribute="bottom" id="Gst-m2-lCT"/>
                             <constraint firstItem="G1Z-ET-AZ0" firstAttribute="centerY" secondItem="nyJ-nl-ctb" secondAttribute="centerY" id="Xph-s9-Yig"/>
                             <constraint firstItem="G1Z-ET-AZ0" firstAttribute="leading" secondItem="oR9-M9-pVb" secondAttribute="leading" constant="35" id="d5h-Dv-5uI"/>
@@ -780,6 +795,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="6HZ-8E-L5L" id="N1W-Qg-f0U"/>
                         <outlet property="btn1" destination="mNX-U8-MfW" id="rb5-7G-uBG"/>
                         <outlet property="btn2" destination="VWy-vK-fnC" id="9Jd-0x-sVA"/>
                         <outlet property="btn3" destination="19h-YZ-4T6" id="gIP-Zh-5a7"/>

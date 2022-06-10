@@ -252,6 +252,7 @@ DEPENDENCIES:
   - APDUnityAdapter (= 2.11.1.2)
   - APDVungleAdapter (= 2.11.1.2)
   - APDYandexAdapter (= 2.11.1.1)
+  - Appodeal
   - KDCircularProgress
   - liquid-swipe
   - PanModal
@@ -366,6 +367,6 @@ SPEC CHECKSUMS:
   YandexMobileAds: 1306a03792ac2a6576e7e52f49f86a9e7e65c49b
   YandexMobileMetrica: 9e713c16bb6aca0ba63b84c8d7b8b86d32f4ecc4
 
-PODFILE CHECKSUM: acda6eb57a758448125d3f03080579621117fd3e
+PODFILE CHECKSUM: f9e18fc649cd3f8d4b2022ecef5d317f70f272fa
 
 COCOAPODS: 1.11.2

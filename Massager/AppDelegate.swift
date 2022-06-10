@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         static let key: String = "a14483d2951585a941294c8614069ed5284e5fdc0ea34a03"
         static let adTypes: AppodealAdType = [.interstitial, .rewardedVideo, .banner, .nativeAd]
         static let logLevel: APDLogLevel = .debug
-        static let testMode: Bool = true
+        static let testMode: Bool = false
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
