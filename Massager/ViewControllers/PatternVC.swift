@@ -224,5 +224,6 @@ extension PatternVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollec
             }
         }
         self.previousSelectionIndex = indexPath.row
+        self.btnInputOutput.isSelected = true
     }
 }
