@@ -13,6 +13,7 @@ class cellPattern:UICollectionViewCell {
     @IBOutlet weak var imgPattern: UIImageView!
     @IBOutlet weak var lblPattern: UILabel!
     @IBOutlet weak var bgView: UIView!
+    @IBOutlet weak var vwLock: UIView!
 }
 class PatternVC: UIViewController {
 
@@ -183,47 +184,55 @@ extension PatternVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollec
         } else {
             cell.bgView.backgroundColor = UIColor.clear
         }
+        cell.vwLock.layer.cornerRadius = 15.0
+        if indexPath.row < 3 {
+            cell.vwLock.isHidden = true
+        } else {
+            cell.vwLock.isHidden = false
+        }
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (collectionView.frame.size.width/3) - 10.0, height: (collectionView.frame.size.width/3) - 10.0)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if self.countThree == 3 {
-            self.countThree = 0
-            self.fullscreenAds()
-        }
-        self.countThree = self.countThree + 1
-        self.selectedPattern = indexPath.row
-        for i in 0 ..< self.arrSelection.count {
-            self.arrSelection[i] = 0
-        }
-        self.arrSelection[indexPath.row] = 1
-        self.clvPattern.reloadData()
-        if self.previousSelectionIndex != indexPath.row {
-            self.isOnVibration = true
-            self.btnInputOutput.isSelected = false
-            self.btnInputOutput.setTitle("O", for: UIControl.State.normal)
-            self.btnInputOutput.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
-            self.patternVibration(patternType: arrPatterns[indexPath.row])
-        } else {
-            if self.btnInputOutput.isSelected {
-                self.vibrationTimer.invalidate()
-                Vibrator.shared.stopHaptic()
-                Vibrator.shared.stopVibrate()
-                self.isOnVibration = false
-                self.btnInputOutput.isSelected = false
-                self.btnInputOutput.setTitle("I", for: UIControl.State.normal)
-                self.btnInputOutput.backgroundColor = UIColor.init(red: 247.0/255.0, green: 137.0/255.0, blue: 209.0/255.0, alpha: 1.0)
-            } else {
+        if indexPath.row < 3 {
+            if self.countThree == 3 {
+                self.countThree = 0
+                self.fullscreenAds()
+            }
+            self.countThree = self.countThree + 1
+            self.selectedPattern = indexPath.row
+            for i in 0 ..< self.arrSelection.count {
+                self.arrSelection[i] = 0
+            }
+            self.arrSelection[indexPath.row] = 1
+            self.clvPattern.reloadData()
+            if self.previousSelectionIndex != indexPath.row {
                 self.isOnVibration = true
-                self.btnInputOutput.isSelected = true
+                self.btnInputOutput.isSelected = false
                 self.btnInputOutput.setTitle("O", for: UIControl.State.normal)
                 self.btnInputOutput.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
                 self.patternVibration(patternType: arrPatterns[indexPath.row])
+            } else {
+                if self.btnInputOutput.isSelected {
+                    self.vibrationTimer.invalidate()
+                    Vibrator.shared.stopHaptic()
+                    Vibrator.shared.stopVibrate()
+                    self.isOnVibration = false
+                    self.btnInputOutput.isSelected = false
+                    self.btnInputOutput.setTitle("I", for: UIControl.State.normal)
+                    self.btnInputOutput.backgroundColor = UIColor.init(red: 247.0/255.0, green: 137.0/255.0, blue: 209.0/255.0, alpha: 1.0)
+                } else {
+                    self.isOnVibration = true
+                    self.btnInputOutput.isSelected = true
+                    self.btnInputOutput.setTitle("O", for: UIControl.State.normal)
+                    self.btnInputOutput.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+                    self.patternVibration(patternType: arrPatterns[indexPath.row])
+                }
             }
+            self.previousSelectionIndex = indexPath.row
+            self.btnInputOutput.isSelected = true
         }
-        self.previousSelectionIndex = indexPath.row
-        self.btnInputOutput.isSelected = true
     }
 }

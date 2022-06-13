@@ -79,6 +79,15 @@ class InAppPurchase : NSObject, SKProductsRequestDelegate, SKPaymentTransactionO
 	
 	func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
 		print("Received Payment Transaction Response from Apple");
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: nil, message: "Received Payment Transaction Response from Apple", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+            while let presentedViewController = APP_DELEGATE.window?.rootViewController?.presentedViewController {
+                presentedViewController.present(alert, animated: true, completion: nil)
+                return
+            }
+            APP_DELEGATE.window?.rootViewController?.present(alert, animated: true, completion: nil)
+        }
 		
 		for transaction: AnyObject in transactions {
 			if let trans: SKPaymentTransaction = transaction as? SKPaymentTransaction {

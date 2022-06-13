@@ -323,10 +323,32 @@
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Utu-zG-TQ9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock pattern" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9P-G1-Iii">
+                                                                    <rect key="frame" x="15" y="54.5" width="98" height="19.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="A9P-G1-Iii" secondAttribute="trailing" constant="15" id="8Q6-rm-HxM"/>
+                                                                <constraint firstItem="A9P-G1-Iii" firstAttribute="centerY" secondItem="Utu-zG-TQ9" secondAttribute="centerY" id="Utj-OH-Ekv"/>
+                                                                <constraint firstItem="A9P-G1-Iii" firstAttribute="centerX" secondItem="Utu-zG-TQ9" secondAttribute="centerX" id="ebz-hK-3x0"/>
+                                                                <constraint firstItem="A9P-G1-Iii" firstAttribute="leading" secondItem="Utu-zG-TQ9" secondAttribute="leading" constant="15" id="gZU-YY-hiJ"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.96862745098039216" green="0.53725490196078429" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="Utu-zG-TQ9" secondAttribute="trailing" id="7Jw-vU-me6"/>
                                                         <constraint firstAttribute="bottom" secondItem="Ry5-Mo-ZTq" secondAttribute="bottom" constant="15" id="9X0-6a-dpL"/>
+                                                        <constraint firstItem="Utu-zG-TQ9" firstAttribute="leading" secondItem="XQg-zV-yYw" secondAttribute="leading" id="EUb-Xk-fHK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Utu-zG-TQ9" secondAttribute="bottom" id="V0L-wv-j4t"/>
+                                                        <constraint firstItem="Utu-zG-TQ9" firstAttribute="top" secondItem="XQg-zV-yYw" secondAttribute="top" id="VeT-BX-HAk"/>
                                                         <constraint firstItem="Tpm-rb-ZSZ" firstAttribute="top" secondItem="XQg-zV-yYw" secondAttribute="top" constant="23" id="Wgx-4I-xcb"/>
                                                         <constraint firstItem="Tpm-rb-ZSZ" firstAttribute="centerX" secondItem="XQg-zV-yYw" secondAttribute="centerX" id="a7h-4a-PO1"/>
                                                         <constraint firstItem="Ry5-Mo-ZTq" firstAttribute="top" secondItem="Tpm-rb-ZSZ" secondAttribute="bottom" constant="10" id="m0I-u3-sF3"/>
@@ -345,6 +367,7 @@
                                             <outlet property="bgView" destination="XQg-zV-yYw" id="Mme-no-Zgn"/>
                                             <outlet property="imgPattern" destination="Tpm-rb-ZSZ" id="Xd2-Cm-UBF"/>
                                             <outlet property="lblPattern" destination="Ry5-Mo-ZTq" id="BIi-mc-pTi"/>
+                                            <outlet property="vwLock" destination="Utu-zG-TQ9" id="Nhn-tW-vHr"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1339,7 +1362,7 @@ Intensity -&gt; Select maximum</string>
         <!--View Controller-->
         <scene sceneID="5B4-Bz-7FU">
             <objects>
-                <viewController id="tD3-V4-und" customClass="ViewController" customModule="Massager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="tD3-V4-und" customClass="ViewController" customModule="Massager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ggm-NZ-epq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

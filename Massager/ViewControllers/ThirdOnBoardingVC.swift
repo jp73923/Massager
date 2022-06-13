@@ -15,6 +15,7 @@ class ThirdOnBoardingVC: UIViewController {
     var progressRuningTimer = Timer()
     var progressCounter = Timer()
     var counter = 5
+    var isPresent = false
 
     @IBOutlet weak var vwSubscribe: UIView!
     @IBOutlet weak var vwProgress: UIView!
@@ -78,13 +79,17 @@ class ThirdOnBoardingVC: UIViewController {
     }
     
     @IBAction func btnCloseAction(_ sender: Any) {
-        let vc = loadVC(strStoryboardId: SB_MAIN, strVCId: idCustomTabbarVC)
-        APP_DELEGATE.appNavigation = UINavigationController(rootViewController: vc)
-        APP_DELEGATE.appNavigation?.interactivePopGestureRecognizer?.delegate = nil
-        APP_DELEGATE.appNavigation?.interactivePopGestureRecognizer?.isEnabled = true
-        APP_DELEGATE.appNavigation?.isNavigationBarHidden = true
-        APP_DELEGATE.window?.rootViewController = APP_DELEGATE.appNavigation
-        APP_DELEGATE.window?.makeKeyAndVisible()
+        if isPresent {
+            self.dismiss(animated: true, completion: nil)
+        } else {
+            let vc = loadVC(strStoryboardId: SB_MAIN, strVCId: idCustomTabbarVC)
+            APP_DELEGATE.appNavigation = UINavigationController(rootViewController: vc)
+            APP_DELEGATE.appNavigation?.interactivePopGestureRecognizer?.delegate = nil
+            APP_DELEGATE.appNavigation?.interactivePopGestureRecognizer?.isEnabled = true
+            APP_DELEGATE.appNavigation?.isNavigationBarHidden = true
+            APP_DELEGATE.window?.rootViewController = APP_DELEGATE.appNavigation
+            APP_DELEGATE.window?.makeKeyAndVisible()
+        }
     }
     
     @IBAction func btnSubscribeAction(_ sender: Any) {

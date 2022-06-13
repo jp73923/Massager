@@ -15,6 +15,7 @@
 		886CDA17283FF40E0084DD32 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA16283FF40E0084DD32 /* SettingVC.swift */; };
 		886CDA19283FF68F0084DD32 /* VibrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA18283FF68F0084DD32 /* VibrationVC.swift */; };
 		886EE8AB28524E8400FDE566 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886EE8AA28524E8400FDE566 /* StoreKit.framework */; };
+		88876B6228577E11001E6B44 /* DefaulValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88876B6128577E11001E6B44 /* DefaulValues.swift */; };
 		88897E2628412C140023EEEC /* AppleHapticAudioPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88897E2428412C140023EEEC /* AppleHapticAudioPattern.swift */; };
 		88897E2728412C140023EEEC /* Vibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88897E2528412C140023EEEC /* Vibrator.swift */; };
 		88897E2A28412C550023EEEC /* Heartbeat.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 88897E2928412C550023EEEC /* Heartbeat.ahap */; };
@@ -53,6 +54,7 @@
 		886CDA16283FF40E0084DD32 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		886CDA18283FF68F0084DD32 /* VibrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationVC.swift; sourceTree = "<group>"; };
 		886EE8AA28524E8400FDE566 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		88876B6128577E11001E6B44 /* DefaulValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaulValues.swift; sourceTree = "<group>"; };
 		88897E2428412C140023EEEC /* AppleHapticAudioPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleHapticAudioPattern.swift; sourceTree = "<group>"; };
 		88897E2528412C140023EEEC /* Vibrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vibrator.swift; sourceTree = "<group>"; };
 		88897E2928412C550023EEEC /* Heartbeat.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Heartbeat.ahap; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				88E97CED283E871300B33F18 /* AppDelegate.swift */,
 				888A50222847C6A5007C30C1 /* KeynamConstants.swift */,
+				88876B6128577E11001E6B44 /* DefaulValues.swift */,
 				88897E2328412C140023EEEC /* Vibrator */,
 				886CDA1A283FFD9A0084DD32 /* ViewControllers */,
 				88E97D01283E8A5900B33F18 /* Resources */,
@@ -390,6 +393,7 @@
 				88897E2628412C140023EEEC /* AppleHapticAudioPattern.swift in Sources */,
 				886CDA19283FF68F0084DD32 /* VibrationVC.swift in Sources */,
 				88F1DF9628413AB3004FF8A3 /* Ring.swift in Sources */,
+				88876B6228577E11001E6B44 /* DefaulValues.swift in Sources */,
 				88F1DF9828413AB3004FF8A3 /* Easing.swift in Sources */,
 				88F1DF9528413AB3004FF8A3 /* FaveButton.swift in Sources */,
 				886CDA0F283F35940084DD32 /* MainVC.swift in Sources */,

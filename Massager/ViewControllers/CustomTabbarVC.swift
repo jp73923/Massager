@@ -25,6 +25,14 @@ class CustomTabbarVC: UIViewController {
         super.viewDidLoad()
         self.leadingSelector.constant = UIScreen.main.bounds.size.width/3
         NotificationCenter.default.addObserver(self, selector: #selector(moveToTab), name: Notification.Name("moveToPatternTab"), object: nil)
+        if UserDefaultManager.getBooleanFromUserDefaults(key: "isWatchTutorial") {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "page3") as! ThirdOnBoardingVC
+            vc.modalPresentationStyle = .fullScreen
+            vc.isPresent = true
+            APP_DELEGATE.appNavigation?.present(vc, animated: true, completion: nil)
+        } else {
+            UserDefaultManager.setBooleanToUserDefaults(value: true, key: "isWatchTutorial")
+        }
     }
     
     @objc func moveToTab() {

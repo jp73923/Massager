@@ -28,23 +28,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Ads Integration Code
         synchroniseConsent()
         configureAppearance()
+        self.setupInitialController()
         return true
+    }
+    
+    func setupInitialController() {
+        if UserDefaultManager.getBooleanFromUserDefaults(key: "isWatchTutorial") {
+            let vc = loadVC(strStoryboardId: SB_MAIN, strVCId: idCustomTabbarVC)
+            APP_DELEGATE.appNavigation = UINavigationController(rootViewController: vc)
+            APP_DELEGATE.appNavigation?.interactivePopGestureRecognizer?.delegate = nil
+            APP_DELEGATE.appNavigation?.interactivePopGestureRecognizer?.isEnabled = true
+            APP_DELEGATE.appNavigation?.isNavigationBarHidden = true
+            self.window?.rootViewController = APP_DELEGATE.appNavigation
+            self.window?.makeKeyAndVisible()
+        } else {
+            let vc = loadVC(strStoryboardId: SB_MAIN, strVCId: "ViewController")
+            APP_DELEGATE.appNavigation = UINavigationController(rootViewController: vc)
+            APP_DELEGATE.appNavigation?.interactivePopGestureRecognizer?.delegate = nil
+            APP_DELEGATE.appNavigation?.interactivePopGestureRecognizer?.isEnabled = true
+            APP_DELEGATE.appNavigation?.isNavigationBarHidden = true
+            self.window?.rootViewController = APP_DELEGATE.appNavigation
+            self.window?.makeKeyAndVisible()
+        }
     }
     
     // MARK: Appodeal Initialization
     private func initializeAppodealSDK() {
-        /// Custom settings
-        // Appodeal.setFramework(.native, version: "1.0.0")
-        // Appodeal.setTriggerPrecacheCallbacks(true)
-        // Appodeal.setLocationTracking(true)
-        
         /// Test Mode
         Appodeal.setTestingEnabled(AppodealConstants.testMode)
         
-        /// User Data
-        // Appodeal.setUserId("userID")
-        // Appodeal.setUserAge(25)
-        // Appodeal.setUserGender(.male)
         Appodeal.setLogLevel(AppodealConstants.logLevel)
         Appodeal.setAutocache(true, types: AppodealConstants.adTypes)
         // Initialise Appodeal SDK with consent report
