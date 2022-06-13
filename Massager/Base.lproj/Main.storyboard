@@ -323,22 +323,30 @@
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Utu-zG-TQ9">
+                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Utu-zG-TQ9">
                                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock pattern" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9P-G1-Iii">
-                                                                    <rect key="frame" x="15" y="54.5" width="98" height="19.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
+                                                                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juq-rs-PG6">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                </button>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="wZc-fc-hWi">
+                                                                    <rect key="frame" x="46.5" y="46.5" width="35" height="35"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="35" id="mjl-LX-hly"/>
+                                                                        <constraint firstAttribute="height" constant="35" id="nnR-yr-bKF"/>
+                                                                    </constraints>
+                                                                </imageView>
                                                             </subviews>
-                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="trailing" secondItem="A9P-G1-Iii" secondAttribute="trailing" constant="15" id="8Q6-rm-HxM"/>
-                                                                <constraint firstItem="A9P-G1-Iii" firstAttribute="centerY" secondItem="Utu-zG-TQ9" secondAttribute="centerY" id="Utj-OH-Ekv"/>
-                                                                <constraint firstItem="A9P-G1-Iii" firstAttribute="centerX" secondItem="Utu-zG-TQ9" secondAttribute="centerX" id="ebz-hK-3x0"/>
-                                                                <constraint firstItem="A9P-G1-Iii" firstAttribute="leading" secondItem="Utu-zG-TQ9" secondAttribute="leading" constant="15" id="gZU-YY-hiJ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="juq-rs-PG6" secondAttribute="trailing" id="91o-IC-AjA"/>
+                                                                <constraint firstItem="wZc-fc-hWi" firstAttribute="centerX" secondItem="Utu-zG-TQ9" secondAttribute="centerX" id="AKW-jL-AV8"/>
+                                                                <constraint firstItem="wZc-fc-hWi" firstAttribute="centerY" secondItem="Utu-zG-TQ9" secondAttribute="centerY" id="Ew3-uP-1er"/>
+                                                                <constraint firstItem="juq-rs-PG6" firstAttribute="leading" secondItem="Utu-zG-TQ9" secondAttribute="leading" id="cxO-nZ-x3x"/>
+                                                                <constraint firstItem="juq-rs-PG6" firstAttribute="top" secondItem="Utu-zG-TQ9" secondAttribute="top" id="r2k-qb-CVF"/>
+                                                                <constraint firstAttribute="bottom" secondItem="juq-rs-PG6" secondAttribute="bottom" id="z44-kp-KnR"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
@@ -1543,10 +1551,10 @@ Control Vibration!</string>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7kr-Bc-CTL">
-                                <rect key="frame" x="131.5" y="431" width="151" height="34"/>
+                                <rect key="frame" x="63" y="404.5" width="288" height="87"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBSCRIBE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="999-gg-YEf">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="34"/>
+                                        <rect key="frame" x="68.5" y="0.0" width="151" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="FYl-hj-zrI"/>
                                             <constraint firstAttribute="width" constant="151" id="htG-sQ-M13"/>
@@ -1555,13 +1563,13 @@ Control Vibration!</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eou-nn-AAU">
-                                        <rect key="frame" x="-68.5" y="0.0" width="288" height="52"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eou-nn-AAU">
+                                        <rect key="frame" x="0.0" y="35" width="288" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="288" id="a2d-Zj-nll"/>
                                             <constraint firstAttribute="height" constant="52" id="zvt-JW-oqZ"/>
                                         </constraints>
-                                        <string key="text">3 days free, then $549.00 per week.
+                                        <string key="text">3 days free, then $5,49.00 per week.
 You can cancel subscription at any time.</string>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                         <nil key="textColor"/>
@@ -1569,6 +1577,10 @@ You can cancel subscription at any time.</string>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkK-QI-Kpd" customClass="ShimmerView" customModule="Massager" customModuleProvider="target">
+                                <rect key="frame" x="25" y="374" width="364" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozu-yT-2Zg">
                                 <rect key="frame" x="25" y="373" width="364" height="150"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -1576,11 +1588,41 @@ You can cancel subscription at any time.</string>
                                     <action selector="btnSubscribeAction:" destination="iUL-iQ-uA8" eventType="touchUpInside" id="tbo-SQ-o47"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Se-Hh-wjP">
-                                <rect key="frame" x="30" y="764" width="354" height="78"/>
-                                <string key="text">This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Se-Hh-wjP">
+                                <rect key="frame" x="30" y="677.5" width="354" height="124.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings. Any unused portion of a free trial period, will be forfeited when the user purchases a subscription to that publication, where applicable. </string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Terms and conditions">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" and the ">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy Policy">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eF5-Ow-n2K">
@@ -1602,31 +1644,48 @@ You can cancel subscription at any time.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iV-Gi-TKf">
+                                <rect key="frame" x="176" y="817" width="62" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="35Y-WA-Rwn"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Restore"/>
+                                <connections>
+                                    <action selector="btnRestoreAction:" destination="iUL-iQ-uA8" eventType="touchUpInside" id="uhl-1t-aMz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6L2-Sj-mbv"/>
                         <color key="backgroundColor" red="0.44705882352941173" green="0.3435079952391113" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fkK-QI-Kpd" firstAttribute="trailing" secondItem="ozu-yT-2Zg" secondAttribute="trailing" id="0XM-Mx-U6u"/>
                             <constraint firstItem="eF5-Ow-n2K" firstAttribute="centerY" secondItem="Azo-cP-TPw" secondAttribute="centerY" id="7qE-iw-M1D"/>
                             <constraint firstItem="u5B-0K-dds" firstAttribute="centerX" secondItem="Rq1-aT-Q7N" secondAttribute="centerX" id="7sB-Al-RyL"/>
                             <constraint firstItem="6L2-Sj-mbv" firstAttribute="trailing" secondItem="Azo-cP-TPw" secondAttribute="trailing" constant="15" id="8Gz-Qf-Ebe"/>
                             <constraint firstItem="6L2-Sj-mbv" firstAttribute="trailing" secondItem="2Eb-Og-uTy" secondAttribute="trailing" constant="25" id="8Zn-GA-7PK"/>
                             <constraint firstItem="u5B-0K-dds" firstAttribute="top" secondItem="zyq-GX-JoH" secondAttribute="bottom" constant="15" id="8zi-gz-fwa"/>
                             <constraint firstItem="6L2-Sj-mbv" firstAttribute="trailing" secondItem="1Se-Hh-wjP" secondAttribute="trailing" constant="30" id="BOh-aB-NOt"/>
+                            <constraint firstItem="6L2-Sj-mbv" firstAttribute="bottom" secondItem="6iV-Gi-TKf" secondAttribute="bottom" constant="10" id="GAt-VR-Dz6"/>
                             <constraint firstAttribute="trailing" secondItem="u5B-0K-dds" secondAttribute="trailing" constant="30" id="I08-bN-Wkk"/>
+                            <constraint firstItem="fkK-QI-Kpd" firstAttribute="leading" secondItem="ozu-yT-2Zg" secondAttribute="leading" id="IXx-2f-eko"/>
                             <constraint firstItem="7kr-Bc-CTL" firstAttribute="centerY" secondItem="Rq1-aT-Q7N" secondAttribute="centerY" id="Iuu-ft-4Ez"/>
                             <constraint firstItem="7kr-Bc-CTL" firstAttribute="centerX" secondItem="Rq1-aT-Q7N" secondAttribute="centerX" id="MU6-Lu-Yo1"/>
                             <constraint firstItem="1Se-Hh-wjP" firstAttribute="leading" secondItem="6L2-Sj-mbv" secondAttribute="leading" constant="30" id="Qm7-x6-kQm"/>
                             <constraint firstItem="ozu-yT-2Zg" firstAttribute="leading" secondItem="2Eb-Og-uTy" secondAttribute="leading" id="XFC-ee-TRc"/>
-                            <constraint firstItem="6L2-Sj-mbv" firstAttribute="bottom" secondItem="1Se-Hh-wjP" secondAttribute="bottom" constant="20" id="bgV-gL-x7C"/>
+                            <constraint firstItem="6iV-Gi-TKf" firstAttribute="centerX" secondItem="6L2-Sj-mbv" secondAttribute="centerX" id="Z6Z-Yo-wfd"/>
+                            <constraint firstItem="6iV-Gi-TKf" firstAttribute="top" secondItem="1Se-Hh-wjP" secondAttribute="bottom" constant="15" id="a8i-me-nsy"/>
                             <constraint firstItem="9Po-lS-awk" firstAttribute="centerX" secondItem="eF5-Ow-n2K" secondAttribute="centerX" id="dVH-pb-b9t"/>
                             <constraint firstItem="zyq-GX-JoH" firstAttribute="leading" secondItem="6L2-Sj-mbv" secondAttribute="leading" constant="30" id="eb7-cS-Wha"/>
                             <constraint firstItem="2Eb-Og-uTy" firstAttribute="leading" secondItem="6L2-Sj-mbv" secondAttribute="leading" constant="25" id="gZs-7T-mWO"/>
                             <constraint firstItem="Azo-cP-TPw" firstAttribute="top" secondItem="6L2-Sj-mbv" secondAttribute="top" constant="34" id="hHT-Pf-vkm"/>
                             <constraint firstItem="2Eb-Og-uTy" firstAttribute="top" secondItem="ozu-yT-2Zg" secondAttribute="top" id="krZ-OF-JPG"/>
+                            <constraint firstItem="fkK-QI-Kpd" firstAttribute="bottom" secondItem="ozu-yT-2Zg" secondAttribute="bottom" constant="1" id="lfQ-e6-QnE"/>
                             <constraint firstItem="u5B-0K-dds" firstAttribute="leading" secondItem="Rq1-aT-Q7N" secondAttribute="leading" constant="30" id="m6p-Ez-AZO"/>
                             <constraint firstItem="eF5-Ow-n2K" firstAttribute="centerX" secondItem="Azo-cP-TPw" secondAttribute="centerX" id="obW-QK-BNU"/>
                             <constraint firstItem="ozu-yT-2Zg" firstAttribute="bottom" secondItem="2Eb-Og-uTy" secondAttribute="bottom" id="pbs-fz-bxl"/>
                             <constraint firstItem="2Eb-Og-uTy" firstAttribute="centerX" secondItem="Rq1-aT-Q7N" secondAttribute="centerX" id="qL3-7Z-kOA"/>
+                            <constraint firstItem="fkK-QI-Kpd" firstAttribute="top" secondItem="ozu-yT-2Zg" secondAttribute="top" constant="1" id="qWj-10-wwA"/>
                             <constraint firstItem="2Eb-Og-uTy" firstAttribute="centerY" secondItem="Rq1-aT-Q7N" secondAttribute="centerY" id="tq9-Ds-Lz0"/>
                             <constraint firstItem="9Po-lS-awk" firstAttribute="centerY" secondItem="eF5-Ow-n2K" secondAttribute="centerY" id="uxJ-Js-cpl"/>
                             <constraint firstItem="zyq-GX-JoH" firstAttribute="top" secondItem="6L2-Sj-mbv" secondAttribute="top" constant="28" id="zCG-Sy-Dqd"/>
@@ -1637,6 +1696,8 @@ You can cancel subscription at any time.</string>
                     <connections>
                         <outlet property="btnClose" destination="Azo-cP-TPw" id="CuX-0l-LkF"/>
                         <outlet property="lblCounter" destination="9Po-lS-awk" id="F4V-48-Xtn"/>
+                        <outlet property="lblText" destination="1Se-Hh-wjP" id="4Fw-W8-0Is"/>
+                        <outlet property="shrimmerView" destination="fkK-QI-Kpd" id="lOB-8L-aPj"/>
                         <outlet property="vwProgress" destination="eF5-Ow-n2K" id="d6Z-6d-tWs"/>
                         <outlet property="vwSubscribe" destination="2Eb-Og-uTy" id="VMK-hM-NNn"/>
                     </connections>

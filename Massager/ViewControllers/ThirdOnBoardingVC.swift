@@ -16,16 +16,22 @@ class ThirdOnBoardingVC: UIViewController {
     var progressCounter = Timer()
     var counter = 5
     var isPresent = false
-
+    
     @IBOutlet weak var vwSubscribe: UIView!
     @IBOutlet weak var vwProgress: UIView!
     @IBOutlet weak var lblCounter: UILabel!
     @IBOutlet weak var btnClose: UIButton!
+    @IBOutlet weak var shrimmerView: ShimmerView!
+    @IBOutlet weak var lblText: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.vwSubscribe.clipsToBounds = true
         self.vwSubscribe.layer.cornerRadius = 15.0
+        
+        self.shrimmerView.clipsToBounds = true
+        self.shrimmerView.layer.cornerRadius = 15.0
+        
         self.btnClose.isHidden = true
         
         self.progressAddTimer.invalidate()
@@ -33,9 +39,26 @@ class ThirdOnBoardingVC: UIViewController {
         
         self.progressRuningTimer.invalidate()
         self.progressRuningTimer = Timer.scheduledTimer(timeInterval: 0.7, target: self, selector: #selector(self.addProgressRuningView), userInfo: nil, repeats: true)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapLabel(tap:)))
+        self.lblText.addGestureRecognizer(tap)
+        self.lblText.isUserInteractionEnabled = true
+
+    }
+    @objc func tapLabel(tap:UIGestureRecognizer) {
+        if tap.location(in: self.view).y > 550 {
+            if tap.location(in: self.view).x > 104 && tap.location(in: self.view).x < 284 {
+                guard let url = URL(string: "http://luckydevapplelt.epizy.com/terms_of_use") else { return }
+                UIApplication.shared.openURL(url)
+            } else {
+                guard let url = URL(string: "http://luckydevapplelt.epizy.com/private_policy_massager_apple") else { return }
+                UIApplication.shared.openURL(url)
+            }
+        }
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        shrimmerView.startAnimating()
     }
     @objc func counterProgress() {
         counter = counter - 1
@@ -94,6 +117,10 @@ class ThirdOnBoardingVC: UIViewController {
     
     @IBAction func btnSubscribeAction(_ sender: Any) {
         InAppPurchase.sharedInstance.buyAutorenewableSubscription()
+    }
+    
+    @IBAction func btnRestoreAction(_ sender: Any) {
+        InAppPurchase.sharedInstance.restoreTransactions()
     }
 
 }
