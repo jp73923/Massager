@@ -18,6 +18,8 @@ class MainVC: UIViewController {
     @IBOutlet weak var btn5: UIButton!
     @IBOutlet weak var vwBgHurricane: UIView!
     @IBOutlet weak var bannerView: APDBannerView!
+    @IBOutlet weak var vwSliderSelection: UIView!
+    @IBOutlet weak var silder: UISlider!
 
     var vibrationTimer1 = Timer()
     var vibrationTimer2 = Timer()
@@ -59,6 +61,9 @@ class MainVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(tabChanged), name: Notification.Name("changeTab"), object: nil)
         
         Appodeal.showAd(.bannerBottom, forPlacement: "", rootViewController: self)
+        
+        self.silder.transform = self.silder.transform.rotated(by: 270.0/180*M_PI);
+
     }
     // MARK: Setup
     @objc func tabChanged() {
@@ -70,6 +75,55 @@ class MainVC: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+    }
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        print(sender.value)
+        self.btn1.backgroundColor = UIColor.white
+        self.btn2.backgroundColor = UIColor.white
+        self.btn3.backgroundColor = UIColor.white
+        self.btn4.backgroundColor = UIColor.white
+        self.btn5.backgroundColor = UIColor.white
+        intensity = sender.tag
+        if sender.value > 0.1 && sender.value < 0.20 {
+            self.btn5.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            vibrationTimer5.invalidate()
+            vibrationTimer5 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update5), userInfo: nil, repeats: true)
+        } else if sender.value > 0.20 && sender.value < 0.40 {
+            self.btn5.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            self.btn4.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            vibrationTimer4.invalidate()
+            vibrationTimer4 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update4), userInfo: nil, repeats: true)
+        } else if sender.value > 0.40 && sender.value < 0.60 {
+            self.btn5.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            self.btn4.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            self.btn3.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            vibrationTimer3.invalidate()
+            vibrationTimer3 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update3), userInfo: nil, repeats: true)
+        } else if sender.value > 0.60 && sender.value < 0.80 {
+            self.btn5.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            self.btn4.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            self.btn3.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            self.btn2.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            vibrationTimer2.invalidate()
+            vibrationTimer2 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update2), userInfo: nil, repeats: true)
+        } else if sender.value > 0.80 && sender.value <= 1 {
+            self.btn5.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            self.btn4.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            self.btn3.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            self.btn2.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            self.btn1.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+            vibrationTimer1.invalidate()
+            vibrationTimer1 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update1), userInfo: nil, repeats: true)
+        } else {
+            vibrationTimer1.invalidate()
+            vibrationTimer2.invalidate()
+            vibrationTimer3.invalidate()
+            vibrationTimer4.invalidate()
+            vibrationTimer5.invalidate()
+        }
+        if APP_DELEGATE.musicSelected != "" {
+            self.playSound(soundName: APP_DELEGATE.musicSelected, soundExtension: APP_DELEGATE.musicExtensionSelected)
+        }
     }
     @objc func update1() {
         let generator = UIImpactFeedbackGenerator(style: .heavy)

@@ -804,6 +804,27 @@
                                     <constraint firstAttribute="height" constant="50" id="1kl-Ih-Eqd"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1e-8z-AEk">
+                                <rect key="frame" x="172" y="110" width="70" height="133"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6jC-bW-9fM">
+                                        <rect key="frame" x="-31" y="51.5" width="133" height="31"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="minimumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="sliderChanged:" destination="Qeo-FX-c54" eventType="valueChanged" id="RUE-kC-UZU"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6jC-bW-9fM" firstAttribute="leading" secondItem="B1e-8z-AEk" secondAttribute="leading" constant="-29" id="55X-sd-S8U"/>
+                                    <constraint firstItem="6jC-bW-9fM" firstAttribute="centerX" secondItem="B1e-8z-AEk" secondAttribute="centerX" id="61N-4P-Rjf"/>
+                                    <constraint firstItem="6jC-bW-9fM" firstAttribute="centerY" secondItem="B1e-8z-AEk" secondAttribute="centerY" id="KKg-Nd-mkQ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oR9-M9-pVb"/>
                         <color key="backgroundColor" red="1" green="0.49411764705882355" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -811,6 +832,7 @@
                             <constraint firstItem="cvd-Vg-D36" firstAttribute="centerX" secondItem="oYZ-cb-nl0" secondAttribute="centerX" id="0E1-c2-hmL"/>
                             <constraint firstItem="8Dh-cv-HBL" firstAttribute="centerX" secondItem="oYZ-cb-nl0" secondAttribute="centerX" id="1Gj-lP-cNU"/>
                             <constraint firstItem="oR9-M9-pVb" firstAttribute="trailing" secondItem="oYZ-cb-nl0" secondAttribute="trailing" id="8Yt-He-zWe"/>
+                            <constraint firstItem="B1e-8z-AEk" firstAttribute="trailing" secondItem="8Dh-cv-HBL" secondAttribute="trailing" id="8t1-bO-2VQ"/>
                             <constraint firstItem="6HZ-8E-L5L" firstAttribute="bottom" secondItem="oR9-M9-pVb" secondAttribute="bottom" id="B2Y-nL-3kj"/>
                             <constraint firstItem="6HZ-8E-L5L" firstAttribute="leading" secondItem="oR9-M9-pVb" secondAttribute="leading" id="BVa-Td-Cjw"/>
                             <constraint firstItem="oR9-M9-pVb" firstAttribute="trailing" secondItem="6HZ-8E-L5L" secondAttribute="trailing" id="G2v-wd-DXV"/>
@@ -820,9 +842,12 @@
                             <constraint firstItem="8Dh-cv-HBL" firstAttribute="top" secondItem="cvd-Vg-D36" secondAttribute="bottom" constant="25" id="eJ3-48-4nb"/>
                             <constraint firstItem="oYZ-cb-nl0" firstAttribute="leading" secondItem="dVF-19-yFW" secondAttribute="leading" id="fzW-RJ-QZd"/>
                             <constraint firstItem="nyJ-nl-ctb" firstAttribute="centerY" secondItem="oYZ-cb-nl0" secondAttribute="centerY" constant="22" id="ga0-4h-wpx"/>
+                            <constraint firstItem="B1e-8z-AEk" firstAttribute="leading" secondItem="8Dh-cv-HBL" secondAttribute="leading" id="h1c-35-2xX"/>
                             <constraint firstItem="cvd-Vg-D36" firstAttribute="top" secondItem="dVF-19-yFW" secondAttribute="top" constant="20" id="phO-vs-lFE"/>
+                            <constraint firstItem="B1e-8z-AEk" firstAttribute="bottom" secondItem="8Dh-cv-HBL" secondAttribute="bottom" id="ueg-91-zwO"/>
                             <constraint firstItem="oYZ-cb-nl0" firstAttribute="top" secondItem="dVF-19-yFW" secondAttribute="top" id="wSG-BA-6IV"/>
                             <constraint firstItem="oR9-M9-pVb" firstAttribute="trailing" secondItem="nyJ-nl-ctb" secondAttribute="trailing" constant="35" id="zSA-L2-psA"/>
+                            <constraint firstItem="B1e-8z-AEk" firstAttribute="top" secondItem="8Dh-cv-HBL" secondAttribute="top" id="zeY-3u-mqQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -834,7 +859,9 @@
                         <outlet property="btn5" destination="ZMh-QF-0lq" id="w5p-J4-zOD"/>
                         <outlet property="lockButton" destination="nyJ-nl-ctb" id="2lQ-mB-gy5"/>
                         <outlet property="musicButton" destination="G1Z-ET-AZ0" id="Nce-Rw-vP5"/>
+                        <outlet property="silder" destination="6jC-bW-9fM" id="BzT-nb-8er"/>
                         <outlet property="vwBgHurricane" destination="cvd-Vg-D36" id="Eoh-Oe-fJG"/>
+                        <outlet property="vwSliderSelection" destination="B1e-8z-AEk" id="xJI-4t-4aP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCS-cq-peF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
