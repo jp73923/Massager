@@ -63,9 +63,21 @@ class MainVC: UIViewController {
         Appodeal.showAd(.bannerBottom, forPlacement: "", rootViewController: self)
         
         self.silder.transform = self.silder.transform.rotated(by: 270.0/180*M_PI);
-
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        self.silder.addGestureRecognizer(tap)
     }
     // MARK: Setup
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        let pointTapped: CGPoint = sender.location(in: self.view)
+
+        let positionOfSlider: CGPoint = self.silder.frame.origin
+        let widthOfSlider: CGFloat = self.silder.frame.size.width
+        let newValue = ((pointTapped.x - positionOfSlider.x) * CGFloat(self.silder.maximumValue) / widthOfSlider)
+
+        self.silder.setValue(Float(newValue)/10, animated: true)
+        self.sliderChanged(self.silder)
+    }
     @objc func tabChanged() {
         self.vibrationTimer1.invalidate()
         self.vibrationTimer2.invalidate()
@@ -73,9 +85,7 @@ class MainVC: UIViewController {
         self.vibrationTimer4.invalidate()
         self.vibrationTimer5.invalidate()
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
+    
     @IBAction func sliderChanged(_ sender: UISlider) {
         print(sender.value)
         self.btn1.backgroundColor = UIColor.white

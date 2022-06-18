@@ -36,12 +36,22 @@ class PatternVC: UIViewController {
         super.viewDidLoad()
         self.vwInputOutput.clipsToBounds = true
         self.vwInputOutput.layer.cornerRadius = 50.0
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(tabChangedToPatternMain), name: Notification.Name("tabChangedToPatternMain"), object: nil)
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.vibrationTimer.invalidate()
         Vibrator.shared.stopHaptic()
         Vibrator.shared.stopVibrate()
+    }
+    @objc func tabChangedToPatternMain() {
+        self.vibrationTimer.invalidate()
+        Vibrator.shared.stopHaptic()
+        Vibrator.shared.stopVibrate()
+        self.btnInputOutput.isSelected = false
+        self.btnInputOutput.setTitle("I", for: UIControl.State.normal)
+        self.btnInputOutput.backgroundColor = UIColor.init(red: 247.0/255.0, green: 137.0/255.0, blue: 209.0/255.0, alpha: 1.0)
     }
     @objc func hurricane() {
         let generator = UIImpactFeedbackGenerator(style: .medium)
