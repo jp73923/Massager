@@ -23,32 +23,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DEC6C5B1-817A-4244-9EBF-60BE33D4A804"
+            uuid = "F64E06A8-5345-43DC-A47F-04E8E4F98793"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Massager/ViewControllers/MainVC.swift"
+            filePath = "Massager/ViewControllers/MusicVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "sliderChanged(_:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5780A093-1E5A-4E20-9D2C-1397BD09AC9D"
+            uuid = "26E159CC-66B6-401D-8DF0-1BB4FF97B228"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Massager/ViewControllers/MainVC.swift"
+            filePath = "Massager/Resources/LanguageManager/LanguageManger.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "handleTap(_:)"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "localiz(comment:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

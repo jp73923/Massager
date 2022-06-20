@@ -54,7 +54,7 @@ class VibrationVC: UIViewController {
         }
     }
     @IBAction func btnSettingAction(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+        UIApplication.shared.openURL(NSURL(string:"App-prefs:Sounds")! as URL)
     }
 }
 

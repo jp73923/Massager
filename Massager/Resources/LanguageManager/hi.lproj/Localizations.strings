@@ -1,0 +1,24 @@
+/* 
+  Localizations.strings
+  Massager
+
+  Created by Jay on 20/06/22.
+  
+*/
+
+"Welcome To Vibrate" = "स्वागत कंपित करना";
+
+"Pattern" = "पैटर्न";
+"Main" = "मुख्य";
+"Simple" = "सरल";
+
+"NO VIBRATION?" = "कोई कंपन नहीं?";
+"Vibration" = "कंपन";
+"Pauses Time" = "समय रोकता है";
+
+"NO" = "नहीं";
+"BIRDS" = "पक्षी";
+"FIRE" = "आग";
+"RAIN" = "बारिश";
+"RAIN 2" = "बारिश 2";
+"SEA" = "समुद्र";

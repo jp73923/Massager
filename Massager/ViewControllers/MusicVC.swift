@@ -60,7 +60,7 @@ extension MusicVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tblMusic.dequeueReusableCell(withIdentifier: "cellMusic", for: indexPath) as! cellMusic
-        cell.lblMusic.text = self.arrLabels[indexPath.row]
+        cell.lblMusic.text = self.arrLabels[indexPath.row].localiz()
         cell.imgMusic.image = UIImage.init(named: self.arrIcons[indexPath.row])
         if self.arrSelection[indexPath.row] == 1 {
             cell.bgView.layer.borderColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0).cgColor

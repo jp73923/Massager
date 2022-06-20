@@ -1,0 +1,24 @@
+/* 
+  Localizations.strings
+  Massager
+
+  Created by Jay on 20/06/22.
+  
+*/
+
+"Welcome To Vibrate" = "Welcome To Vibrate";
+
+"Pattern" = "Pattern";
+"Main" = "Main";
+"Simple" = "Simple";
+
+"NO VIBRATION?" = "NO VIBRATION?";
+"Vibration" = "Vibration";
+"Pauses Time" = "Pauses Time";
+
+"NO" = "NO";
+"BIRDS" = "BIRDS";
+"FIRE" = "FIRE";
+"RAIN" = "RAIN";
+"RAIN 2" = "RAIN 2";
+"SEA" = "SEA";

@@ -20,6 +20,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var bannerView: APDBannerView!
     @IBOutlet weak var vwSliderSelection: UIView!
     @IBOutlet weak var silder: UISlider!
+    @IBOutlet weak var btnSelectedPattern: UIButton!
 
     var vibrationTimer1 = Timer()
     var vibrationTimer2 = Timer()
@@ -59,13 +60,17 @@ class MainVC: UIViewController {
         self.musicButton?.setSelected(selected: true, animated: false)
         
         NotificationCenter.default.addObserver(self, selector: #selector(tabChanged), name: Notification.Name("changeTab"), object: nil)
-        
+
         Appodeal.showAd(.bannerBottom, forPlacement: "", rootViewController: self)
         
         self.silder.transform = self.silder.transform.rotated(by: 270.0/180*M_PI);
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         self.silder.addGestureRecognizer(tap)
+                
+        if APP_DELEGATE.strSelectedPattern != "" {
+            self.btnSelectedPattern.setBackgroundImage(UIImage.init(named: APP_DELEGATE.strSelectedPattern.lowercased()), for: UIControl.State.normal)
+        }
     }
     // MARK: Setup
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
@@ -84,6 +89,9 @@ class MainVC: UIViewController {
         self.vibrationTimer3.invalidate()
         self.vibrationTimer4.invalidate()
         self.vibrationTimer5.invalidate()
+        if APP_DELEGATE.strSelectedPattern != "" {
+            self.btnSelectedPattern.setBackgroundImage(UIImage.init(named: APP_DELEGATE.strSelectedPattern.lowercased()), for: UIControl.State.normal)
+        }
     }
     
     @IBAction func sliderChanged(_ sender: UISlider) {
@@ -130,6 +138,8 @@ class MainVC: UIViewController {
             vibrationTimer3.invalidate()
             vibrationTimer4.invalidate()
             vibrationTimer5.invalidate()
+            self.playSound(soundName: "NO", soundExtension: APP_DELEGATE.musicExtensionSelected)
+            return
         }
         if APP_DELEGATE.musicSelected != "" {
             self.playSound(soundName: APP_DELEGATE.musicSelected, soundExtension: APP_DELEGATE.musicExtensionSelected)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8849F0402860D4EA009515BD /* LanguageManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849F03F2860D4EA009515BD /* LanguageManger.swift */; };
+		8849F0452860D965009515BD /* Localizations.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8849F0472860D965009515BD /* Localizations.strings */; };
 		886CDA0D283F35710084DD32 /* PatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA0C283F35710084DD32 /* PatternVC.swift */; };
 		886CDA0F283F35940084DD32 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA0E283F35940084DD32 /* MainVC.swift */; };
 		886CDA11283F35AF0084DD32 /* SimpleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886CDA10283F35AF0084DD32 /* SimpleVC.swift */; };
@@ -47,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		31627B981447A4EBD412D124 /* Pods-Massager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massager.debug.xcconfig"; path = "Target Support Files/Pods-Massager/Pods-Massager.debug.xcconfig"; sourceTree = "<group>"; };
+		8849F03F2860D4EA009515BD /* LanguageManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManger.swift; sourceTree = "<group>"; };
+		8849F0462860D965009515BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizations.strings; sourceTree = "<group>"; };
+		8849F0482860D976009515BD /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizations.strings; sourceTree = "<group>"; };
 		886CDA0C283F35710084DD32 /* PatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternVC.swift; sourceTree = "<group>"; };
 		886CDA0E283F35940084DD32 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		886CDA10283F35AF0084DD32 /* SimpleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVC.swift; sourceTree = "<group>"; };
@@ -108,6 +113,15 @@
 				CA116F3F3BAD6C29E3A3F731 /* Pods-Massager.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8849F03E2860D4DA009515BD /* LanguageManager */ = {
+			isa = PBXGroup;
+			children = (
+				8849F03F2860D4EA009515BD /* LanguageManger.swift */,
+				8849F0472860D965009515BD /* Localizations.strings */,
+			);
+			path = LanguageManager;
 			sourceTree = "<group>";
 		};
 		886CDA1A283FFD9A0084DD32 /* ViewControllers */ = {
@@ -191,6 +205,7 @@
 		88E97D01283E8A5900B33F18 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8849F03E2860D4DA009515BD /* LanguageManager */,
 				88E2226F2850DE4D00482715 /* InAppPurchase */,
 				88F1DF8928413AB3004FF8A3 /* FavAnimation */,
 				88897E2828412C550023EEEC /* Haptics */,
@@ -288,6 +303,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hi,
 			);
 			mainGroup = 88E97CE1283E871300B33F18;
 			productRefGroup = 88E97CEB283E871300B33F18 /* Products */;
@@ -309,6 +325,7 @@
 				88E97CF7283E871600B33F18 /* Assets.xcassets in Resources */,
 				88E97D22283E8A5900B33F18 /* sea.mp3 in Resources */,
 				88E97D26283E8A5900B33F18 /* fire.mp3 in Resources */,
+				8849F0452860D965009515BD /* Localizations.strings in Resources */,
 				88E97CF5283E871300B33F18 /* Main.storyboard in Resources */,
 				88E97D25283E8A5900B33F18 /* rain2.mp3 in Resources */,
 				88897E2A28412C550023EEEC /* Heartbeat.ahap in Resources */,
@@ -399,6 +416,7 @@
 				88F1DF9628413AB3004FF8A3 /* Ring.swift in Sources */,
 				88876B6228577E11001E6B44 /* DefaulValues.swift in Sources */,
 				88F1DF9828413AB3004FF8A3 /* Easing.swift in Sources */,
+				8849F0402860D4EA009515BD /* LanguageManger.swift in Sources */,
 				88F1DF9528413AB3004FF8A3 /* FaveButton.swift in Sources */,
 				886CDA0F283F35940084DD32 /* MainVC.swift in Sources */,
 				88E97CEE283E871300B33F18 /* AppDelegate.swift in Sources */,
@@ -413,6 +431,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8849F0472860D965009515BD /* Localizations.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8849F0462860D965009515BD /* en */,
+				8849F0482860D976009515BD /* hi */,
+			);
+			name = Localizations.strings;
+			sourceTree = "<group>";
+		};
 		88E97CF3283E871300B33F18 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -497,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

@@ -211,6 +211,7 @@ extension PatternVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollec
                 self.countThree = 0
                 self.fullscreenAds()
             }
+            APP_DELEGATE.strSelectedPattern = arrPatternsImages[indexPath.row]
             self.countThree = self.countThree + 1
             self.selectedPattern = indexPath.row
             for i in 0 ..< self.arrSelection.count {

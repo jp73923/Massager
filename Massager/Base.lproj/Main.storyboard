@@ -862,6 +862,7 @@
                         <outlet property="btn3" destination="19h-YZ-4T6" id="gIP-Zh-5a7"/>
                         <outlet property="btn4" destination="01N-Th-Eq9" id="Hda-NR-RTG"/>
                         <outlet property="btn5" destination="ZMh-QF-0lq" id="w5p-J4-zOD"/>
+                        <outlet property="btnSelectedPattern" destination="P0n-We-3N0" id="AKF-T8-teM"/>
                         <outlet property="lockButton" destination="nyJ-nl-ctb" id="2lQ-mB-gy5"/>
                         <outlet property="musicButton" destination="G1Z-ET-AZ0" id="Nce-Rw-vP5"/>
                         <outlet property="silder" destination="6jC-bW-9fM" id="BzT-nb-8er"/>
