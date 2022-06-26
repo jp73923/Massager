@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window:UIWindow?
     var musicSelected = ""
     var musicExtensionSelected = ""
-    var strSelectedPattern = ""
+    var strSelectedPattern = "Hurricane"
 
     private struct AppodealConstants {
         static let key: String = "a14483d2951585a941294c8614069ed5284e5fdc0ea34a03"
@@ -25,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        LanguageManager.shared.setLanguage(language: Languages(rawValue: Locale.preferredLanguages[0].components(separatedBy: "-")[0])!)
+        LocalizationSystem.sharedInstance.setLanguage(languageCode: "hi")
+       // LocalizationSystem.sharedInstance.setLanguage(languageCode: Locale.preferredLanguages[0].components(separatedBy: "-")[0])
         Vibrator.shared.prepare()
         //Ads Integration Code
         synchroniseConsent()

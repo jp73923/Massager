@@ -71,8 +71,13 @@ class MainVC: UIViewController {
         if APP_DELEGATE.strSelectedPattern != "" {
             self.btnSelectedPattern.setBackgroundImage(UIImage.init(named: APP_DELEGATE.strSelectedPattern.lowercased()), for: UIControl.State.normal)
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(tabChangedToPatternMain), name: Notification.Name("tabChangedToPatternMain"), object: nil)
     }
     // MARK: Setup
+    @objc func tabChangedToPatternMain() {
+        self.btnSelectedPattern.setBackgroundImage(UIImage.init(named: APP_DELEGATE.strSelectedPattern.lowercased()), for: UIControl.State.normal)
+    }
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
         let pointTapped: CGPoint = sender.location(in: self.view)
 

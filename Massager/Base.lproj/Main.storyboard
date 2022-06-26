@@ -37,6 +37,12 @@
                                             <action selector="btnSettingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWJ-SH-HXi"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO VIBRATION?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rS1-BF-Ji0">
+                                        <rect key="frame" x="251" y="5" width="148" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyl-jQ-6jN">
                                         <rect key="frame" x="251" y="5" width="148" height="40"/>
                                         <constraints>
@@ -45,7 +51,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="NO VIBRATION?"/>
                                         <connections>
                                             <action selector="btnVibrationVCAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsj-a1-VbD"/>
                                         </connections>
@@ -53,7 +58,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="rS1-BF-Ji0" firstAttribute="bottom" secondItem="zyl-jQ-6jN" secondAttribute="bottom" id="10x-N9-oWv"/>
+                                    <constraint firstItem="rS1-BF-Ji0" firstAttribute="leading" secondItem="zyl-jQ-6jN" secondAttribute="leading" id="1GF-ms-FLh"/>
+                                    <constraint firstItem="rS1-BF-Ji0" firstAttribute="trailing" secondItem="zyl-jQ-6jN" secondAttribute="trailing" id="6vv-uS-zjF"/>
                                     <constraint firstItem="Wjx-pm-Zc6" firstAttribute="leading" secondItem="grX-Vt-8e9" secondAttribute="leading" constant="15" id="crz-H5-ESj"/>
+                                    <constraint firstItem="rS1-BF-Ji0" firstAttribute="top" secondItem="zyl-jQ-6jN" secondAttribute="top" id="fPj-1V-uFn"/>
                                     <constraint firstAttribute="trailing" secondItem="zyl-jQ-6jN" secondAttribute="trailing" constant="15" id="jGt-7p-QeV"/>
                                     <constraint firstItem="zyl-jQ-6jN" firstAttribute="centerY" secondItem="grX-Vt-8e9" secondAttribute="centerY" id="mvS-Ne-gaW"/>
                                     <constraint firstAttribute="height" constant="50" id="vQN-Mi-zD0"/>
@@ -266,6 +275,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="8vS-ja-LzA"/>
                     <connections>
+                        <outlet property="btnNoVibration" destination="zyl-jQ-6jN" id="q0C-vg-ZbJ"/>
+                        <outlet property="lblNoVibration" destination="rS1-BF-Ji0" id="wMB-jh-LBt"/>
                         <outlet property="leadingSelector" destination="FXy-ni-aM1" id="7Se-1O-OK1"/>
                         <outlet property="mainBottom" destination="wYT-Bc-a94" id="IwJ-c9-Klt"/>
                         <outlet property="mainTop" destination="26D-Wz-qP1" id="ujm-JZ-uRk"/>
@@ -1035,51 +1046,118 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cSE-02-IEd">
                                         <rect key="frame" x="15" y="75" width="384" height="166"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91e-04-5nN">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiY-7g-jXZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
-                                                <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO VIBRATION?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7In-Y3-SUe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
+                                                        <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91e-04-5nN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="42" id="AwB-Pp-Mce"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="NO VIBRATION?">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnVibrationAction:" destination="iwZ-kq-Iuh" eventType="touchUpInside" id="s4I-Hy-DKl"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="42" id="AwB-Pp-Mce"/>
+                                                    <constraint firstAttribute="bottom" secondItem="91e-04-5nN" secondAttribute="bottom" id="37n-HQ-elG"/>
+                                                    <constraint firstItem="7In-Y3-SUe" firstAttribute="top" secondItem="WiY-7g-jXZ" secondAttribute="top" id="6Hx-xB-krj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="91e-04-5nN" secondAttribute="trailing" id="8Oy-ey-w0Z"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7In-Y3-SUe" secondAttribute="bottom" id="KCT-aP-tJN"/>
+                                                    <constraint firstAttribute="height" constant="42" id="WA1-hY-vem"/>
+                                                    <constraint firstItem="91e-04-5nN" firstAttribute="leading" secondItem="WiY-7g-jXZ" secondAttribute="leading" id="c1x-mJ-1FO"/>
+                                                    <constraint firstItem="91e-04-5nN" firstAttribute="top" secondItem="WiY-7g-jXZ" secondAttribute="top" id="eYR-T7-I6R"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7In-Y3-SUe" secondAttribute="trailing" id="gpa-iT-c98"/>
+                                                    <constraint firstItem="7In-Y3-SUe" firstAttribute="leading" secondItem="WiY-7g-jXZ" secondAttribute="leading" id="rOz-ht-d8e"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="NO VIBRATION?">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btnVibrationAction:" destination="iwZ-kq-Iuh" eventType="touchUpInside" id="s4I-Hy-DKl"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCP-IZ-Aba">
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ypx-Bd-UNE">
                                                 <rect key="frame" x="0.0" y="62" width="384" height="42"/>
-                                                <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE RATE OUR APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dY-eb-nlb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
+                                                        <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCP-IZ-Aba">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="42" id="Zel-Ov-AHG"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="PLEASE RATE OUR APP">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnRateAppAction:" destination="iwZ-kq-Iuh" eventType="touchUpInside" id="8V8-Rr-9GR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="42" id="Zel-Ov-AHG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3dY-eb-nlb" secondAttribute="trailing" id="5Fb-UG-qJU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3dY-eb-nlb" secondAttribute="bottom" id="Auv-aU-qbP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wCP-IZ-Aba" secondAttribute="bottom" id="Bdn-r2-7af"/>
+                                                    <constraint firstItem="wCP-IZ-Aba" firstAttribute="leading" secondItem="Ypx-Bd-UNE" secondAttribute="leading" id="CPo-4q-vbC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wCP-IZ-Aba" secondAttribute="trailing" id="Eml-vv-Ou7"/>
+                                                    <constraint firstItem="wCP-IZ-Aba" firstAttribute="top" secondItem="Ypx-Bd-UNE" secondAttribute="top" id="U3E-jx-IzO"/>
+                                                    <constraint firstItem="3dY-eb-nlb" firstAttribute="top" secondItem="Ypx-Bd-UNE" secondAttribute="top" id="bVB-8S-1li"/>
+                                                    <constraint firstItem="3dY-eb-nlb" firstAttribute="leading" secondItem="Ypx-Bd-UNE" secondAttribute="leading" id="u8j-0r-lus"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="PLEASE RATE OUR APP">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btnRateAppAction:" destination="iwZ-kq-Iuh" eventType="touchUpInside" id="8V8-Rr-9GR"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-D0-u4B">
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1s-su-GUh">
                                                 <rect key="frame" x="0.0" y="124" width="384" height="42"/>
-                                                <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SHARE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyQ-Cs-39H">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-D0-u4B">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="42" id="0M7-Vm-EiR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="SHARE">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnShareAction:" destination="iwZ-kq-Iuh" eventType="touchUpInside" id="jNH-cy-4vn"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="42" id="0M7-Vm-EiR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tIA-D0-u4B" secondAttribute="trailing" id="XQv-kb-ShF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tIA-D0-u4B" secondAttribute="bottom" id="l3m-qH-q9l"/>
+                                                    <constraint firstItem="tIA-D0-u4B" firstAttribute="leading" secondItem="p1s-su-GUh" secondAttribute="leading" id="u6n-El-e44"/>
+                                                    <constraint firstItem="tIA-D0-u4B" firstAttribute="top" secondItem="p1s-su-GUh" secondAttribute="top" id="yim-oM-Vzy"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="SHARE">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btnShareAction:" destination="iwZ-kq-Iuh" eventType="touchUpInside" id="jNH-cy-4vn"/>
-                                                </connections>
-                                            </button>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>

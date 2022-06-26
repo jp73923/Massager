@@ -195,7 +195,7 @@ extension PatternVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollec
             cell.bgView.backgroundColor = UIColor.clear
         }
         cell.vwLock.layer.cornerRadius = 15.0
-        if indexPath.row < 3 {
+        if indexPath.row < 5 {
             cell.vwLock.isHidden = true
         } else {
             cell.vwLock.isHidden = false
@@ -206,7 +206,7 @@ extension PatternVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollec
         return CGSize(width: (collectionView.frame.size.width/3) - 10.0, height: (collectionView.frame.size.width/3) - 10.0)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row < 3 {
+        if indexPath.row < 5 {
             if self.countThree == 3 {
                 self.countThree = 0
                 self.fullscreenAds()
