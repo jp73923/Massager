@@ -1,0 +1,114 @@
+
+/* Class = "UILabel"; text = "🔥 Simple mode (select speed and press Start);"; ObjectID = "0bD-g6-581"; */
+"0bD-g6-581.text" = "🔥 Tryb prosty (wybierz prędkość i naciśnij Start);";
+
+/* Class = "UILabel"; text = "This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings. Any unused portion of a free trial period, will be forfeited when the user purchases a subscription to that publication, where applicable. Terms and conditions and the Privacy Policy"; ObjectID = "1Se-Hh-wjP"; */
+"1Se-Hh-wjP.text" = "To jest subskrypcja z automatycznym odnawianiem. Płatność jest dokonywana na Konto App Store w momencie potwierdzenia, Subskrypcja jest odnawiana, chyba że zostanie wyłączona co najmniej 24 godziny przed końcem okresów, konto zostanie również obciążone za odnowienie. Możesz to wyłączyć w Ustawieniach konta. Każda niewykorzystana część bezpłatnego okresu próbnego zostanie utracona, gdy użytkownik kupi subskrypcję tej publikacji, w stosownych przypadkach. Regulamin i Polityka Prywatności";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1TF-SB-UKe"; */
+"1TF-SB-UKe.normalTitle" = "Przycisk";
+
+/* Class = "UILabel"; text = "- Unlock custom mode for absoulute vibration control"; ObjectID = "28m-1t-h18"; */
+"28m-1t-h18.text" = "- Odblokuj tryb niestandardowy do absolutnej kontroli wibracji";
+
+/* Class = "UILabel"; text = "WANT IT STRONGER?"; ObjectID = "5M0-83-a9s"; */
+"5M0-83-a9s.text" = "CHCESZ MOCNIEJSZE?";
+
+/* Class = "UILabel"; text = "With Us You Can More"; ObjectID = "5fj-uf-eB1"; */
+"5fj-uf-eB1.text" = "Z nami możesz więcej";
+
+/* Class = "UIButton"; normalTitle = "Restore"; ObjectID = "6iV-Gi-TKf"; */
+"6iV-Gi-TKf.normalTitle" = "Przywrócić";
+
+/* Class = "UILabel"; text = "🔥 Custom mode(create your own unique vibration pattern);"; ObjectID = "8JJ-Bv-QLE"; */
+"8JJ-Bv-QLE.text" = "🔥 Tryb niestandardowy (stwórz swój własny, unikalny wzór wibracji);";
+
+/* Class = "UIButton"; normalTitle = "NO VIBRATION?"; ObjectID = "91e-04-5nN"; */
+"91e-04-5nN.normalTitle" = "BRAK WIBRACJI?";
+
+/* Class = "UILabel"; text = "SUBSCRIBE"; ObjectID = "999-gg-YEf"; */
+"999-gg-YEf.text" = "SUBSKRYBUJ";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "9Po-lS-awk"; */
+"9Po-lS-awk.text" = "5";
+
+/* Class = "UILabel"; text = "Pauses Time"; ObjectID = "Cfv-Aa-W7P"; */
+"Cfv-Aa-W7P.text" = "Wstrzymuje czas";
+
+/* Class = "UILabel"; text = "Simple"; ObjectID = "DVO-MM-Q8E"; */
+"DVO-MM-Q8E.text" = "Prosty";
+
+/* Class = "UILabel"; text = "NO"; ObjectID = "JFN-rU-7Mi"; */
+"JFN-rU-7Mi.text" = "NIE";
+
+/* Class = "UILabel"; text = "Hurricane"; ObjectID = "Ry5-Mo-ZTq"; */
+"Ry5-Mo-ZTq.text" = "Hurricane";
+
+/* Class = "UILabel"; text = "Pattern"; ObjectID = "TSL-Db-UW2"; */
+"TSL-Db-UW2.text" = "Wzorzec";
+
+/* Class = "UILabel"; text = "Welcome \nTo Vibrate"; ObjectID = "TXK-aT-abW"; */
+"TXK-aT-abW.text" = "Witamy \nDo wibracji";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UZN-9X-8Un"; */
+"UZN-9X-8Un.normalTitle" = "Przycisk";
+
+/* Class = "UIButton"; normalTitle = "To The Settings   >"; ObjectID = "Wzd-Ru-tji"; */
+"Wzd-Ru-tji.normalTitle" = "Do ustawień   >";
+
+/* Class = "UILabel"; text = "Check that vibration is enabled on your device.\nFor exampke:\nSettings -> Sound -> Turn on During a call or In silent mode"; ObjectID = "Zq8-GX-k6t"; */
+"Zq8-GX-k6t.text" = "Sprawdź, czy wibracja jest włączona na Twoim urządzeniu.\nNa przykład:\nUstawienia -> Dźwięk -> Włącz podczas rozmowy lub W trybie cichym";
+
+/* Class = "UILabel"; text = "Vibration"; ObjectID = "diI-4a-j0h"; */
+"diI-4a-j0h.text" = "Wibracja";
+
+/* Class = "UILabel"; text = "3 days free, then $5,49.00 per week.\nYou can cancel subscription at any time."; ObjectID = "eou-nn-AAU"; */
+"eou-nn-AAU.text" = "3 dni za darmo, a następnie 5 49,00 USD tygodniowo.\nW każdej chwili możesz anulować subskrypcję.";
+
+/* Class = "UIButton"; normalTitle = "I"; ObjectID = "gMG-Oe-35w"; */
+"gMG-Oe-35w.normalTitle" = "I";
+
+/* Class = "UILabel"; text = "NO VIBRATION?"; ObjectID = "gz4-ji-T7D"; */
+"gz4-ji-T7D.text" = "BRAK WIBRACJI?";
+
+/* Class = "UILabel"; text = "- Remove popup and banned ads"; ObjectID = "hjI-4C-AvB"; */
+"hjI-4C-AvB.text" = "- Usuń wyskakujące okienka i zakazane reklamy";
+
+/* Class = "UILabel"; text = "On some devices, the vibrarion strength can be changed in the settings.\nFor example:\nSettings -> Sounds and vibration -> Vibration\nIntensity -> Select maximum"; ObjectID = "m2D-ys-6Tj"; */
+"m2D-ys-6Tj.text" = "Na niektórych urządzeniach siłę wibracji można zmienić w ustawieniach.\nNa przykład:\nUstawienia -> Dźwięki i wibracje -> Wibracje\nIntensywność -> Wybierz maksimum";
+
+/* Class = "UILabel"; text = "MUSIC"; ObjectID = "nKC-bs-pEh"; */
+"nKC-bs-pEh.text" = "MUZYKA";
+
+/* Class = "UILabel"; text = "New Way To \nControl Vibration!"; ObjectID = "nag-wf-oAI"; */
+"nag-wf-oAI.text" = "Nowy sposób \nkontroli wibracji!";
+
+/* Class = "UIButton"; normalTitle = "SHARE"; ObjectID = "tIA-D0-u4B"; */
+"tIA-D0-u4B.normalTitle" = "DZIELIĆ";
+
+/* Class = "UIButton"; normalTitle = "I"; ObjectID = "tMQ-ug-EPR"; */
+"tMQ-ug-EPR.normalTitle" = "I";
+
+/* Class = "UILabel"; text = "Tap & hold to unlock"; ObjectID = "tX5-tE-agO"; */
+"tX5-tE-agO.text" = "Dotknij i przytrzymaj, aby odblokować";
+
+/* Class = "UILabel"; text = "🔥 User Mode (select speed, intensity, and pause between vibrations);"; ObjectID = "u26-LC-14j"; */
+"u26-LC-14j.text" = "🔥 Tryb użytkownika (wybierz prędkość, intensywność i przerwę między wibracjami);";
+
+/* Class = "UILabel"; text = "Main"; ObjectID = "uTA-jE-qRe"; */
+"uTA-jE-qRe.text" = "Główny";
+
+/* Class = "UIButton"; normalTitle = "PLEASE RATE OUR APP"; ObjectID = "wCP-IZ-Aba"; */
+"wCP-IZ-Aba.normalTitle" = "OCEŃ NASZĄ APLIKACJĘ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xXC-Hb-XFL"; */
+"xXC-Hb-XFL.normalTitle" = "Przycisk";
+
+/* Class = "UIButton"; normalTitle = "To The Settings   >"; ObjectID = "yHb-9b-dXi"; */
+"yHb-9b-dXi.normalTitle" = "Do ustawień   >";
+
+/* Class = "UIButton"; normalTitle = "NO VIBRATION?"; ObjectID = "zyl-jQ-6jN"; */
+"zyl-jQ-6jN.normalTitle" = "BRAK WIBRACJI?";
+
+/* Class = "UILabel"; text = "Become Diamond"; ObjectID = "zyq-GX-JoH"; */
+"zyq-GX-JoH.text" = "Zostań Diamentem";

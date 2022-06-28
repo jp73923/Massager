@@ -1,0 +1,114 @@
+
+/* Class = "UILabel"; text = "🔥 Simple mode (select speed and press Start);"; ObjectID = "0bD-g6-581"; */
+"0bD-g6-581.text" = "🔥 シンプルモード（速度を選択して開始を押します）;";
+
+/* Class = "UILabel"; text = "This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings. Any unused portion of a free trial period, will be forfeited when the user purchases a subscription to that publication, where applicable. Terms and conditions and the Privacy Policy"; ObjectID = "1Se-Hh-wjP"; */
+"1Se-Hh-wjP.text" = "これは自動書き換え可能なサブスクリプションです。支払いは確認時にAppStoreアカウントに送金されます。サブスクリプションは、期間が終了する少なくとも24時間前に終了しない限り更新され、アカウントにも更新料金が請求されます。アカウント設定でオフにすることができます。無料試用期間の未使用部分は、該当する場合、ユーザーがその出版物のサブスクリプションを購入したときに没収されます。利用規約とプライバシーポリシー";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1TF-SB-UKe"; */
+"1TF-SB-UKe.normalTitle" = "ボタン";
+
+/* Class = "UILabel"; text = "- Unlock custom mode for absoulute vibration control"; ObjectID = "28m-1t-h18"; */
+"28m-1t-h18.text" = "- 絶対振動制御のカスタムモードのロックを解除します";
+
+/* Class = "UILabel"; text = "WANT IT STRONGER?"; ObjectID = "5M0-83-a9s"; */
+"5M0-83-a9s.text" = "もっと強くしたいですか？";
+
+/* Class = "UILabel"; text = "With Us You Can More"; ObjectID = "5fj-uf-eB1"; */
+"5fj-uf-eB1.text" = "私たちと一緒にあなたはもっとできる";
+
+/* Class = "UIButton"; normalTitle = "Restore"; ObjectID = "6iV-Gi-TKf"; */
+"6iV-Gi-TKf.normalTitle" = "戻す";
+
+/* Class = "UILabel"; text = "🔥 Custom mode(create your own unique vibration pattern);"; ObjectID = "8JJ-Bv-QLE"; */
+"8JJ-Bv-QLE.text" = "🔥 カスタムモード（独自の振動パターンを作成します）;";
+
+/* Class = "UIButton"; normalTitle = "NO VIBRATION?"; ObjectID = "91e-04-5nN"; */
+"91e-04-5nN.normalTitle" = "振動はありませんか？";
+
+/* Class = "UILabel"; text = "SUBSCRIBE"; ObjectID = "999-gg-YEf"; */
+"999-gg-YEf.text" = "申し込む";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "9Po-lS-awk"; */
+"9Po-lS-awk.text" = "5";
+
+/* Class = "UILabel"; text = "Pauses Time"; ObjectID = "Cfv-Aa-W7P"; */
+"Cfv-Aa-W7P.text" = "時間の一時停止";
+
+/* Class = "UILabel"; text = "Simple"; ObjectID = "DVO-MM-Q8E"; */
+"DVO-MM-Q8E.text" = "単純";
+
+/* Class = "UILabel"; text = "NO"; ObjectID = "JFN-rU-7Mi"; */
+"JFN-rU-7Mi.text" = "いいえ";
+
+/* Class = "UILabel"; text = "Hurricane"; ObjectID = "Ry5-Mo-ZTq"; */
+"Ry5-Mo-ZTq.text" = "Hurricane";
+
+/* Class = "UILabel"; text = "Pattern"; ObjectID = "TSL-Db-UW2"; */
+"TSL-Db-UW2.text" = "パターン";
+
+/* Class = "UILabel"; text = "Welcome \nTo Vibrate"; ObjectID = "TXK-aT-abW"; */
+"TXK-aT-abW.text" = "ようこそ\nバイブレーション";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UZN-9X-8Un"; */
+"UZN-9X-8Un.normalTitle" = "ボタン";
+
+/* Class = "UIButton"; normalTitle = "To The Settings   >"; ObjectID = "Wzd-Ru-tji"; */
+"Wzd-Ru-tji.normalTitle" = "設定へ   >";
+
+/* Class = "UILabel"; text = "Check that vibration is enabled on your device.\nFor exampke:\nSettings -> Sound -> Turn on During a call or In silent mode"; ObjectID = "Zq8-GX-k6t"; */
+"Zq8-GX-k6t.text" = "デバイスでバイブレーションが有効になっていることを確認します。\n例：\n設定->サウンド->通話中またはサイレントモードでオンにする";
+
+/* Class = "UILabel"; text = "Vibration"; ObjectID = "diI-4a-j0h"; */
+"diI-4a-j0h.text" = "振動";
+
+/* Class = "UILabel"; text = "3 days free, then $5,49.00 per week.\nYou can cancel subscription at any time."; ObjectID = "eou-nn-AAU"; */
+"eou-nn-AAU.text" = "3日間無料、その後は週$5,49.00。\nサブスクリプションはいつでもキャンセルできます。";
+
+/* Class = "UIButton"; normalTitle = "I"; ObjectID = "gMG-Oe-35w"; */
+"gMG-Oe-35w.normalTitle" = "私";
+
+/* Class = "UILabel"; text = "NO VIBRATION?"; ObjectID = "gz4-ji-T7D"; */
+"gz4-ji-T7D.text" = "振動はありませんか？";
+
+/* Class = "UILabel"; text = "- Remove popup and banned ads"; ObjectID = "hjI-4C-AvB"; */
+"hjI-4C-AvB.text" = "- ポップアップ広告と禁止された広告を削除する";
+
+/* Class = "UILabel"; text = "On some devices, the vibrarion strength can be changed in the settings.\nFor example:\nSettings -> Sounds and vibration -> Vibration\nIntensity -> Select maximum"; ObjectID = "m2D-ys-6Tj"; */
+"m2D-ys-6Tj.text" = "一部のデバイスでは、振動の強さを設定で変更できます。\ n例：\n[設定]->[音と振動]->[振動]\n[強さ]->[最大値を選択]";
+
+/* Class = "UILabel"; text = "MUSIC"; ObjectID = "nKC-bs-pEh"; */
+"nKC-bs-pEh.text" = "音楽";
+
+/* Class = "UILabel"; text = "New Way To \nControl Vibration!"; ObjectID = "nag-wf-oAI"; */
+"nag-wf-oAI.text" = "振動を制御する\n新しい方法！";
+
+/* Class = "UIButton"; normalTitle = "SHARE"; ObjectID = "tIA-D0-u4B"; */
+"tIA-D0-u4B.normalTitle" = "シェア";
+
+/* Class = "UIButton"; normalTitle = "I"; ObjectID = "tMQ-ug-EPR"; */
+"tMQ-ug-EPR.normalTitle" = "私";
+
+/* Class = "UILabel"; text = "Tap & hold to unlock"; ObjectID = "tX5-tE-agO"; */
+"tX5-tE-agO.text" = "タップアンドホールドしてロックを解除します";
+
+/* Class = "UILabel"; text = "🔥 User Mode (select speed, intensity, and pause between vibrations);"; ObjectID = "u26-LC-14j"; */
+"u26-LC-14j.text" = "🔥 ユーザーモード（速度、強度、振動間の一時停止を選択）。";
+
+/* Class = "UILabel"; text = "Main"; ObjectID = "uTA-jE-qRe"; */
+"uTA-jE-qRe.text" = "主要";
+
+/* Class = "UIButton"; normalTitle = "PLEASE RATE OUR APP"; ObjectID = "wCP-IZ-Aba"; */
+"wCP-IZ-Aba.normalTitle" = "私たちのアプリを評価してください";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xXC-Hb-XFL"; */
+"xXC-Hb-XFL.normalTitle" = "ボタン";
+
+/* Class = "UIButton"; normalTitle = "To The Settings   >"; ObjectID = "yHb-9b-dXi"; */
+"yHb-9b-dXi.normalTitle" = "設定へ   >";
+
+/* Class = "UIButton"; normalTitle = "NO VIBRATION?"; ObjectID = "zyl-jQ-6jN"; */
+"zyl-jQ-6jN.normalTitle" = "振動はありませんか？";
+
+/* Class = "UILabel"; text = "Become Diamond"; ObjectID = "zyq-GX-JoH"; */
+"zyq-GX-JoH.text" = "ダイヤモンドになる";

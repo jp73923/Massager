@@ -1,0 +1,19 @@
+/* 
+  Localization.strings
+  Massager
+
+  Created by Jay on 26/06/22.
+  
+*/
+
+"Welcome To Vibrate" = "Welcome To Vibrate";
+
+"Pattern" = "Pattern";
+"Main" = "Main";
+"Simple" = "Simple";
+
+"NO VIBRATION?" = "NO VIBRATION?";
+"Vibration" = "Vibration";
+"Pauses Time" = "Pauses Time";
+
+"This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings. Any unused portion of a free trial period, will be forfeited when the user purchases a subscription to that publication, where applicable. Terms and conditions and the Privacy Policy" = "This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings. Any unused portion of a free trial period, will be forfeited when the user purchases a subscription to that publication, where applicable. Terms and conditions and the Privacy Policy";

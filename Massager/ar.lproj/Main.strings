@@ -1,0 +1,114 @@
+
+/* Class = "UILabel"; text = "🔥 Simple mode (select speed and press Start);"; ObjectID = "0bD-g6-581"; */
+"0bD-g6-581.text" = "🔥 الوضع البسيط (حدد السرعة واضغط على بداية)؛";
+
+/* Class = "UILabel"; text = "This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings. Any unused portion of a free trial period, will be forfeited when the user purchases a subscription to that publication, where applicable. Terms and conditions and the Privacy Policy"; ObjectID = "1Se-Hh-wjP"; */
+"1Se-Hh-wjP.text" = "هذا اشتراك قابل لإعادة الشحن تلقائيًا. يتم الدفع إلى حساب متجر التطبيقات عند التأكيد ، ويتم تجديد الاشتراك ما لم يتم إيقاف الدفع قبل 24 ساعة على الأقل من انتهاء الفترة ، سيتم فرض رسوم على الحساب للتجديد أيضًا. يمكنك إيقاف تشغيله في إعدادات حسابك. أي جزء غير مستخدم من فترة تجريبية مجانية ، سيتم مصادرته عندما يشتري المستخدم اشتراكًا في هذا المنشور ، عند الاقتضاء. الشروط والأحكام وسياسة الخصوصية";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1TF-SB-UKe"; */
+"1TF-SB-UKe.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "- Unlock custom mode for absoulute vibration control"; ObjectID = "28m-1t-h18"; */
+"28m-1t-h18.text" = "- فتح الوضع المخصص للتحكم المطلق في الاهتزاز";
+
+/* Class = "UILabel"; text = "WANT IT STRONGER?"; ObjectID = "5M0-83-a9s"; */
+"5M0-83-a9s.text" = "هل تريده أقوى؟";
+
+/* Class = "UILabel"; text = "With Us You Can More"; ObjectID = "5fj-uf-eB1"; */
+"5fj-uf-eB1.text" = "معنا يمكنك المزيد";
+
+/* Class = "UIButton"; normalTitle = "Restore"; ObjectID = "6iV-Gi-TKf"; */
+"6iV-Gi-TKf.normalTitle" = "يعيد";
+
+/* Class = "UILabel"; text = "🔥 Custom mode(create your own unique vibration pattern);"; ObjectID = "8JJ-Bv-QLE"; */
+"8JJ-Bv-QLE.text" = "🔥 الوضع المخصص (قم بإنشاء نمط الاهتزاز الفريد الخاص بك) ؛";
+
+/* Class = "UIButton"; normalTitle = "NO VIBRATION?"; ObjectID = "91e-04-5nN"; */
+"91e-04-5nN.normalTitle" = "لا اهتزاز؟";
+
+/* Class = "UILabel"; text = "SUBSCRIBE"; ObjectID = "999-gg-YEf"; */
+"999-gg-YEf.text" = "الإشتراك";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "9Po-lS-awk"; */
+"9Po-lS-awk.text" = "5";
+
+/* Class = "UILabel"; text = "Pauses Time"; ObjectID = "Cfv-Aa-W7P"; */
+"Cfv-Aa-W7P.text" = "توقف الوقت";
+
+/* Class = "UILabel"; text = "Simple"; ObjectID = "DVO-MM-Q8E"; */
+"DVO-MM-Q8E.text" = "بسيط";
+
+/* Class = "UILabel"; text = "NO"; ObjectID = "JFN-rU-7Mi"; */
+"JFN-rU-7Mi.text" = "رقم";
+
+/* Class = "UILabel"; text = "Hurricane"; ObjectID = "Ry5-Mo-ZTq"; */
+"Ry5-Mo-ZTq.text" = "Hurricane";
+
+/* Class = "UILabel"; text = "Pattern"; ObjectID = "TSL-Db-UW2"; */
+"TSL-Db-UW2.text" = "النمط";
+
+/* Class = "UILabel"; text = "Welcome \nTo Vibrate"; ObjectID = "TXK-aT-abW"; */
+"TXK-aT-abW.text" = "مرحبًا \ n للاهتزاز";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UZN-9X-8Un"; */
+"UZN-9X-8Un.normalTitle" = "زر";
+
+/* Class = "UIButton"; normalTitle = "To The Settings   >"; ObjectID = "Wzd-Ru-tji"; */
+"Wzd-Ru-tji.normalTitle" = "إلى الإعدادات   >";
+
+/* Class = "UILabel"; text = "Check that vibration is enabled on your device.\nFor exampke:\nSettings -> Sound -> Turn on During a call or In silent mode"; ObjectID = "Zq8-GX-k6t"; */
+"Zq8-GX-k6t.text" = "تحقق من تمكين الاهتزاز على جهازك. \ n للحصول على مثال: \ n الإعدادات -> الصوت -> التشغيل أثناء المكالمة أو في الوضع الصامت";
+
+/* Class = "UILabel"; text = "Vibration"; ObjectID = "diI-4a-j0h"; */
+"diI-4a-j0h.text" = "اهتزاز";
+
+/* Class = "UILabel"; text = "3 days free, then $5,49.00 per week.\nYou can cancel subscription at any time."; ObjectID = "eou-nn-AAU"; */
+"eou-nn-AAU.text" = "3 أيام مجانًا ، ثم 5،49.00 دولارًا أمريكيًا في الأسبوع. \ n يمكنك إلغاء الاشتراك في أي وقت.";
+
+/* Class = "UIButton"; normalTitle = "I"; ObjectID = "gMG-Oe-35w"; */
+"gMG-Oe-35w.normalTitle" = "أنا";
+
+/* Class = "UILabel"; text = "NO VIBRATION?"; ObjectID = "gz4-ji-T7D"; */
+"gz4-ji-T7D.text" = "لا اهتزاز؟";
+
+/* Class = "UILabel"; text = "- Remove popup and banned ads"; ObjectID = "hjI-4C-AvB"; */
+"hjI-4C-AvB.text" = "- إزالة النوافذ المنبثقة والإعلانات المحظورة";
+
+/* Class = "UILabel"; text = "On some devices, the vibrarion strength can be changed in the settings.\nFor example:\nSettings -> Sounds and vibration -> Vibration\nIntensity -> Select maximum"; ObjectID = "m2D-ys-6Tj"; */
+"m2D-ys-6Tj.text" = "في بعض الأجهزة ، يمكن تغيير قوة الاهتزاز في الإعدادات. \ n على سبيل المثال: \ n الإعدادات -> الأصوات والاهتزاز -> الاهتزاز \ n الكثافة -> حدد الحد الأقصى";
+
+/* Class = "UILabel"; text = "MUSIC"; ObjectID = "nKC-bs-pEh"; */
+"nKC-bs-pEh.text" = "موسيقى";
+
+/* Class = "UILabel"; text = "New Way To \nControl Vibration!"; ObjectID = "nag-wf-oAI"; */
+"nag-wf-oAI.text" = "طريقة جديدة \ n للتحكم في الاهتزاز!";
+
+/* Class = "UIButton"; normalTitle = "SHARE"; ObjectID = "tIA-D0-u4B"; */
+"tIA-D0-u4B.normalTitle" = "شارك";
+
+/* Class = "UIButton"; normalTitle = "I"; ObjectID = "tMQ-ug-EPR"; */
+"tMQ-ug-EPR.normalTitle" = "أنا";
+
+/* Class = "UILabel"; text = "Tap & hold to unlock"; ObjectID = "tX5-tE-agO"; */
+"tX5-tE-agO.text" = "انقر مع الاستمرار لإلغاء القفل";
+
+/* Class = "UILabel"; text = "🔥 User Mode (select speed, intensity, and pause between vibrations);"; ObjectID = "u26-LC-14j"; */
+"u26-LC-14j.text" = "🔥 وضع المستخدم (حدد السرعة ، والشدة ، والإيقاف المؤقت بين الاهتزازات) ؛";
+
+/* Class = "UILabel"; text = "Main"; ObjectID = "uTA-jE-qRe"; */
+"uTA-jE-qRe.text" = "الأساسية";
+
+/* Class = "UIButton"; normalTitle = "PLEASE RATE OUR APP"; ObjectID = "wCP-IZ-Aba"; */
+"wCP-IZ-Aba.normalTitle" = "يرجى تقييم التطبيق لدينا";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xXC-Hb-XFL"; */
+"xXC-Hb-XFL.normalTitle" = "زر";
+
+/* Class = "UIButton"; normalTitle = "To The Settings   >"; ObjectID = "yHb-9b-dXi"; */
+"yHb-9b-dXi.normalTitle" = "إلى الإعدادات   >";
+
+/* Class = "UIButton"; normalTitle = "NO VIBRATION?"; ObjectID = "zyl-jQ-6jN"; */
+"zyl-jQ-6jN.normalTitle" = "لا اهتزاز؟";
+
+/* Class = "UILabel"; text = "Become Diamond"; ObjectID = "zyq-GX-JoH"; */
+"zyq-GX-JoH.text" = "كن ماسيًا";
