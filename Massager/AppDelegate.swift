@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        LocalizationSystem.sharedInstance.setLanguage(languageCode: "hi")
+      //  LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
        // LocalizationSystem.sharedInstance.setLanguage(languageCode: Locale.preferredLanguages[0].components(separatedBy: "-")[0])
         Vibrator.shared.prepare()
         //Ads Integration Code

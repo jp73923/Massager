@@ -43,7 +43,6 @@ class ThirdOnBoardingVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapLabel(tap:)))
         self.lblText.addGestureRecognizer(tap)
         self.lblText.isUserInteractionEnabled = true
-
     }
     @objc func tapLabel(tap:UIGestureRecognizer) {
         if tap.location(in: self.view).y > 550 {

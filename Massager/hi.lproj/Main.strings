@@ -1,111 +1,114 @@
 
 /* Class = "UILabel"; text = "🔥 Simple mode (select speed and press Start);"; ObjectID = "0bD-g6-581"; */
-"0bD-g6-581.text" = "🔥 Simple mode (select speed and press Start);";
+"0bD-g6-581.text" = "🔥 सरल मोड (गति का चयन करें और प्रारंभ दबाएं);";
+
+/* Class = "UILabel"; text = "This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings. Any unused portion of a free trial period, will be forfeited when the user purchases a subscription to that publication, where applicable. Terms and conditions and the Privacy Policy"; ObjectID = "1Se-Hh-wjP"; */
+"1Se-Hh-wjP.text" = "यह एक ऑटो-रीवेबल सब्सक्रिप्शन है। पुष्टिकरण पर ऐप स्टोर खाते में भुगतान का पीछा किया जाता है, सदस्यता को नवीनीकृत किया जाता है जब तक कि अवधि समाप्त होने से कम से कम 24 घंटे पहले बंद न हो जाए, खाते से नवीनीकरण के लिए भी शुल्क लिया जाएगा। आप इसे अपनी खाता सेटिंग में बंद कर सकते हैं। नि: शुल्क परीक्षण अवधि के किसी भी अप्रयुक्त हिस्से को तब जब्त कर लिया जाएगा जब उपयोगकर्ता उस प्रकाशन की सदस्यता खरीदता है, जहां लागू हो। नियम और शर्तें और गोपनीयता नीति";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1TF-SB-UKe"; */
-"1TF-SB-UKe.normalTitle" = "Button";
+"1TF-SB-UKe.normalTitle" = "बटन";
 
 /* Class = "UILabel"; text = "- Unlock custom mode for absoulute vibration control"; ObjectID = "28m-1t-h18"; */
-"28m-1t-h18.text" = "- Unlock custom mode for absoulute vibration control";
+"28m-1t-h18.text" = "- पूर्ण कंपन नियंत्रण के लिए कस्टम मोड अनलॉक करें";
 
 /* Class = "UILabel"; text = "WANT IT STRONGER?"; ObjectID = "5M0-83-a9s"; */
 "5M0-83-a9s.text" = "इसे और मजबूत करना चाहते हैं?";
 
 /* Class = "UILabel"; text = "With Us You Can More"; ObjectID = "5fj-uf-eB1"; */
-"5fj-uf-eB1.text" = "With Us You Can More";
+"5fj-uf-eB1.text" = "हमारे साथ आप और अधिक कर सकते हैं";
 
 /* Class = "UIButton"; normalTitle = "Restore"; ObjectID = "6iV-Gi-TKf"; */
-"6iV-Gi-TKf.normalTitle" = "Restore";
+"6iV-Gi-TKf.normalTitle" = "पुनर्स्थापित करना";
 
 /* Class = "UILabel"; text = "🔥 Custom mode(create your own unique vibration pattern);"; ObjectID = "8JJ-Bv-QLE"; */
-"8JJ-Bv-QLE.text" = "🔥 Custom mode(create your own unique vibration pattern);";
+"8JJ-Bv-QLE.text" = "🔥 कस्टम मोड (अपना खुद का अनूठा कंपन पैटर्न बनाएं);";
 
 /* Class = "UIButton"; normalTitle = "NO VIBRATION?"; ObjectID = "91e-04-5nN"; */
 "91e-04-5nN.normalTitle" = "कोई कंपन नहीं?";
 
 /* Class = "UILabel"; text = "SUBSCRIBE"; ObjectID = "999-gg-YEf"; */
-"999-gg-YEf.text" = "SUBSCRIBE";
+"999-gg-YEf.text" = "सदस्यता लें";
 
 /* Class = "UILabel"; text = "5"; ObjectID = "9Po-lS-awk"; */
 "9Po-lS-awk.text" = "5";
 
 /* Class = "UILabel"; text = "Pauses Time"; ObjectID = "Cfv-Aa-W7P"; */
-"Cfv-Aa-W7P.text" = "समय रोकता है";
+"Cfv-Aa-W7P.text" = "ठहराव समय";
 
 /* Class = "UILabel"; text = "Simple"; ObjectID = "DVO-MM-Q8E"; */
 "DVO-MM-Q8E.text" = "सरल";
 
 /* Class = "UILabel"; text = "NO"; ObjectID = "JFN-rU-7Mi"; */
-"JFN-rU-7Mi.text" = "NO";
+"JFN-rU-7Mi.text" = "ना";
 
 /* Class = "UILabel"; text = "Hurricane"; ObjectID = "Ry5-Mo-ZTq"; */
 "Ry5-Mo-ZTq.text" = "Hurricane";
 
 /* Class = "UILabel"; text = "Pattern"; ObjectID = "TSL-Db-UW2"; */
-"TSL-Db-UW2.text" = "पैटर्न";
+"TSL-Db-UW2.text" = "नमूना";
 
 /* Class = "UILabel"; text = "Welcome \nTo Vibrate"; ObjectID = "TXK-aT-abW"; */
-"TXK-aT-abW.text" = "Welcome \nTo Vibrate";
+"TXK-aT-abW.text" = "स्वागत है \nवाइब्रेट करने के लिए";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UZN-9X-8Un"; */
-"UZN-9X-8Un.normalTitle" = "Button";
+"UZN-9X-8Un.normalTitle" = "बटन";
 
 /* Class = "UIButton"; normalTitle = "To The Settings   >"; ObjectID = "Wzd-Ru-tji"; */
-"Wzd-Ru-tji.normalTitle" = "To The Settings   >";
+"Wzd-Ru-tji.normalTitle" = "सेटिंग्स के लिए    >";
 
 /* Class = "UILabel"; text = "Check that vibration is enabled on your device.\nFor exampke:\nSettings -> Sound -> Turn on During a call or In silent mode"; ObjectID = "Zq8-GX-k6t"; */
-"Zq8-GX-k6t.text" = "Check that vibration is enabled on your device.\nFor exampke:\nSettings -> Sound -> Turn on During a call or In silent mode";
+"Zq8-GX-k6t.text" = "जांचें कि आपके डिवाइस पर कंपन सक्षम है।\nपरीक्षा के लिए:\nसेटिंग्स -> ध्वनि -> कॉल के दौरान चालू करें या मौन मोड में";
 
 /* Class = "UILabel"; text = "Vibration"; ObjectID = "diI-4a-j0h"; */
 "diI-4a-j0h.text" = "कंपन";
 
 /* Class = "UILabel"; text = "3 days free, then $5,49.00 per week.\nYou can cancel subscription at any time."; ObjectID = "eou-nn-AAU"; */
-"eou-nn-AAU.text" = "3 days free, then $5,49.00 per week.\nYou can cancel subscription at any time.";
+"eou-nn-AAU.text" = "3 दिन मुफ़्त, फिर $5,49.00 प्रति सप्ताह।\nआप किसी भी समय सदस्यता रद्द कर सकते हैं।";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "gMG-Oe-35w"; */
-"gMG-Oe-35w.normalTitle" = "I";
+"gMG-Oe-35w.normalTitle" = "मैं";
 
 /* Class = "UILabel"; text = "NO VIBRATION?"; ObjectID = "gz4-ji-T7D"; */
-"gz4-ji-T7D.text" = "जांचें कि आपके डिवाइस पर कंपन सक्षम है या नहीं। \nउदाहरण के लिए:\nसेटिंग -> ध्वनि -> \"कॉल के दौरान\" या \"मौन मोड में\" चालू करें?";
+"gz4-ji-T7D.text" = "कोई कंपन नहीं?";
 
 /* Class = "UILabel"; text = "- Remove popup and banned ads"; ObjectID = "hjI-4C-AvB"; */
-"hjI-4C-AvB.text" = "- Remove popup and banned ads";
+"hjI-4C-AvB.text" = "- पॉपअप और प्रतिबंधित विज्ञापन हटाएं";
 
 /* Class = "UILabel"; text = "On some devices, the vibrarion strength can be changed in the settings.\nFor example:\nSettings -> Sounds and vibration -> Vibration\nIntensity -> Select maximum"; ObjectID = "m2D-ys-6Tj"; */
-"m2D-ys-6Tj.text" = "कुछ उपकरणों पर, कंपन शक्ति को सेटिंग में बदला जा सकता है।\nउदाहरण के लिए:\nसेटिंग्स -> ध्वनि और कंपन -> कंपन तीव्रता -> अधिकतम चुनें";
+"m2D-ys-6Tj.text" = "कुछ उपकरणों पर, सेटिंग में कंपन शक्ति को बदला जा सकता है।\nउदाहरण के लिए:\nसेटिंग्स -> ध्वनि और कंपन -> कंपन\nतीव्रता -> अधिकतम चुनें";
 
 /* Class = "UILabel"; text = "MUSIC"; ObjectID = "nKC-bs-pEh"; */
-"nKC-bs-pEh.text" = "MUSIC";
+"nKC-bs-pEh.text" = "संगीत";
 
 /* Class = "UILabel"; text = "New Way To \nControl Vibration!"; ObjectID = "nag-wf-oAI"; */
-"nag-wf-oAI.text" = "New Way To \nControl Vibration!";
+"nag-wf-oAI.text" = "को नियंत्रित करने का नया तरीका!";
 
 /* Class = "UIButton"; normalTitle = "SHARE"; ObjectID = "tIA-D0-u4B"; */
-"tIA-D0-u4B.normalTitle" = "SHARE";
+"tIA-D0-u4B.normalTitle" = "शेयर करना";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "tMQ-ug-EPR"; */
-"tMQ-ug-EPR.normalTitle" = "I";
+"tMQ-ug-EPR.normalTitle" = "मैं";
 
 /* Class = "UILabel"; text = "Tap & hold to unlock"; ObjectID = "tX5-tE-agO"; */
-"tX5-tE-agO.text" = "Tap & hold to unlock";
+"tX5-tE-agO.text" = "अनलॉक करने के लिए टैप करके रखें";
 
 /* Class = "UILabel"; text = "🔥 User Mode (select speed, intensity, and pause between vibrations);"; ObjectID = "u26-LC-14j"; */
-"u26-LC-14j.text" = "🔥 User Mode (select speed, intensity, and pause between vibrations);";
+"u26-LC-14j.text" = "🔥 उपयोगकर्ता मोड (चुनें गति, तीव्रता, और कंपन के बीच विराम);";
 
 /* Class = "UILabel"; text = "Main"; ObjectID = "uTA-jE-qRe"; */
 "uTA-jE-qRe.text" = "मुख्य";
 
 /* Class = "UIButton"; normalTitle = "PLEASE RATE OUR APP"; ObjectID = "wCP-IZ-Aba"; */
-"wCP-IZ-Aba.normalTitle" = "PLEASE RATE OUR APP";
+"wCP-IZ-Aba.normalTitle" = "कृपया हमारे ऐप को रेट करें";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xXC-Hb-XFL"; */
-"xXC-Hb-XFL.normalTitle" = "Button";
+"xXC-Hb-XFL.normalTitle" = "बटन";
 
 /* Class = "UIButton"; normalTitle = "To The Settings   >"; ObjectID = "yHb-9b-dXi"; */
-"yHb-9b-dXi.normalTitle" = "सेटिंग में   >";
+"yHb-9b-dXi.normalTitle" = "सेटिंग्स के लिए   >";
 
 /* Class = "UIButton"; normalTitle = "NO VIBRATION?"; ObjectID = "zyl-jQ-6jN"; */
 "zyl-jQ-6jN.normalTitle" = "कोई कंपन नहीं?";
 
 /* Class = "UILabel"; text = "Become Diamond"; ObjectID = "zyq-GX-JoH"; */
-"zyq-GX-JoH.text" = "Become Diamond";
+"zyq-GX-JoH.text" = "हीरा बनें";

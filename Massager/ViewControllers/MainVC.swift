@@ -30,9 +30,11 @@ class MainVC: UIViewController {
 
     var intensity = 5
     var player: AVAudioPlayer?
+    private static let heartbeatHapticFilename: String = "Heartbeat"
 
     @IBOutlet var lockButton: FaveButton?
     @IBOutlet var musicButton: FaveButton?
+    var vibrationTimer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,8 +77,103 @@ class MainVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(tabChangedToPatternMain), name: Notification.Name("tabChangedToPatternMain"), object: nil)
     }
     // MARK: Setup
+    @objc func hurricane() {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
+    }
+    @objc func storm() {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
+    }
+    @objc func explosion() {
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.impactOccurred()
+    }
+    @objc func balance() {
+        Vibrator.shared.startHaptic(named: MainVC.heartbeatHapticFilename, loop: true)
+    }
+    @objc func wind() {
+        Vibrator.shared.startVibrate(frequency: .high, loop: true)
+    }
+    @objc func volcano() {
+        Vibrator.shared.startVibrate(loop: false)
+    }
+    @objc func landflake() {
+        Vibrator.shared.startHaptic(named: MainVC.heartbeatHapticFilename, loop: true)
+    }
+    @objc func fire() {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
+    }
+    @objc func rain() {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
+    }
+    @objc func whirlpool() {
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.impactOccurred()
+    }
+    func patternVibration(patternType:String) {
+        switch patternType {
+        case "Hurricane":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.hurricane), userInfo: nil, repeats: true)
+            break
+        case "Whirlpool":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.02, target: self, selector: #selector(self.whirlpool), userInfo: nil, repeats: true)
+            break
+        case "Strom":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.storm), userInfo: nil, repeats: true)
+            break
+        case "Waterfall":
+            Vibrator.shared.startHaptic(named: MainVC.heartbeatHapticFilename, loop: true)
+            break
+        case "Explosion":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.explosion), userInfo: nil, repeats: true)
+            break
+        case "Balance":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.balance), userInfo: nil, repeats: true)
+            break
+        case "Wind":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.wind), userInfo: nil, repeats: true)
+            break
+        case "Snowflake":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.wind), userInfo: nil, repeats: true)
+            break
+        case "Volcano":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.volcano), userInfo: nil, repeats: true)
+            break
+        case "Fire":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.fire), userInfo: nil, repeats: true)
+            break
+        case "Landslide":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.landflake), userInfo: nil, repeats: true)
+            break
+        case "Rain":
+            self.vibrationTimer.invalidate()
+            self.vibrationTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.rain), userInfo: nil, repeats: true)
+            break
+        case "Sun":
+            Vibrator.shared.startHaptic(named: MainVC.heartbeatHapticFilename, loop: true)
+            break
+        default:
+            let generator = UIImpactFeedbackGenerator(style: .light)
+            generator.impactOccurred()
+            break
+        }
+    }
     @objc func tabChangedToPatternMain() {
         self.btnSelectedPattern.setBackgroundImage(UIImage.init(named: APP_DELEGATE.strSelectedPattern.lowercased()), for: UIControl.State.normal)
+        self.patternVibration(patternType: APP_DELEGATE.strSelectedPattern)
     }
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
         let pointTapped: CGPoint = sender.location(in: self.view)
@@ -107,42 +204,56 @@ class MainVC: UIViewController {
         self.btn4.backgroundColor = UIColor.white
         self.btn5.backgroundColor = UIColor.white
         intensity = sender.tag
+        if APP_DELEGATE.strSelectedPattern != "" {
+            self.patternVibration(patternType: APP_DELEGATE.strSelectedPattern)
+        }
         if sender.value > 0.1 && sender.value < 0.20 {
             self.btn5.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
-            vibrationTimer5.invalidate()
-            vibrationTimer5 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update5), userInfo: nil, repeats: true)
+            if APP_DELEGATE.strSelectedPattern == "" {
+                vibrationTimer5.invalidate()
+                vibrationTimer5 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update5), userInfo: nil, repeats: true)
+            }
         } else if sender.value > 0.20 && sender.value < 0.40 {
             self.btn5.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
             self.btn4.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
-            vibrationTimer4.invalidate()
-            vibrationTimer4 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update4), userInfo: nil, repeats: true)
+            if APP_DELEGATE.strSelectedPattern == "" {
+                vibrationTimer4.invalidate()
+                vibrationTimer4 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update4), userInfo: nil, repeats: true)
+            }
         } else if sender.value > 0.40 && sender.value < 0.60 {
             self.btn5.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
             self.btn4.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
             self.btn3.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
-            vibrationTimer3.invalidate()
-            vibrationTimer3 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update3), userInfo: nil, repeats: true)
+            if APP_DELEGATE.strSelectedPattern == "" {
+                vibrationTimer3.invalidate()
+                vibrationTimer3 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update3), userInfo: nil, repeats: true)
+            }
         } else if sender.value > 0.60 && sender.value < 0.80 {
             self.btn5.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
             self.btn4.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
             self.btn3.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
             self.btn2.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
-            vibrationTimer2.invalidate()
-            vibrationTimer2 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update2), userInfo: nil, repeats: true)
+            if APP_DELEGATE.strSelectedPattern == "" {
+                vibrationTimer2.invalidate()
+                vibrationTimer2 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update2), userInfo: nil, repeats: true)
+            }
         } else if sender.value > 0.80 && sender.value <= 1 {
             self.btn5.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
             self.btn4.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
             self.btn3.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
             self.btn2.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
             self.btn1.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
-            vibrationTimer1.invalidate()
-            vibrationTimer1 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update1), userInfo: nil, repeats: true)
+            if APP_DELEGATE.strSelectedPattern == "" {
+                vibrationTimer1.invalidate()
+                vibrationTimer1 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.update1), userInfo: nil, repeats: true)
+            }
         } else {
             vibrationTimer1.invalidate()
             vibrationTimer2.invalidate()
             vibrationTimer3.invalidate()
             vibrationTimer4.invalidate()
             vibrationTimer5.invalidate()
+            self.vibrationTimer.invalidate()
             self.playSound(soundName: "NO", soundExtension: APP_DELEGATE.musicExtensionSelected)
             return
         }
@@ -151,24 +262,44 @@ class MainVC: UIViewController {
         }
     }
     @objc func update1() {
-        let generator = UIImpactFeedbackGenerator(style: .heavy)
-        generator.impactOccurred()
+        if APP_DELEGATE.strSelectedPattern != "" {
+            
+        } else {
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+        }
     }
     @objc func update2() {
-        let generator = UIImpactFeedbackGenerator(style: .heavy)
-        generator.impactOccurred()
+        if APP_DELEGATE.strSelectedPattern != "" {
+          //  self.patternVibration(patternType: APP_DELEGATE.strSelectedPattern)
+        } else {
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+        }
     }
     @objc func update3() {
-        let generator = UIImpactFeedbackGenerator(style: .medium)
-        generator.impactOccurred()
+        if APP_DELEGATE.strSelectedPattern != "" {
+           // self.patternVibration(patternType: APP_DELEGATE.strSelectedPattern)
+        } else {
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
+        }
     }
     @objc func update4() {
-        let generator = UIImpactFeedbackGenerator(style: .medium)
-        generator.impactOccurred()
+        if APP_DELEGATE.strSelectedPattern != "" {
+           // self.patternVibration(patternType: APP_DELEGATE.strSelectedPattern)
+        } else {
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
+        }
     }
     @objc func update5() {
-        let generator = UIImpactFeedbackGenerator(style: .light)
-        generator.impactOccurred()
+        if APP_DELEGATE.strSelectedPattern != "" {
+           // self.patternVibration(patternType: APP_DELEGATE.strSelectedPattern)
+        } else {
+            let generator = UIImpactFeedbackGenerator(style: .light)
+            generator.impactOccurred()
+        }
     }
     @IBAction func btnMoveToPattern(_ sender: UIButton) {
         NotificationCenter.default.post(name: Notification.Name("moveToPatternTab"), object: nil)

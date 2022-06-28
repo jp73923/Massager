@@ -20,7 +20,6 @@ class CustomTabbarVC: UIViewController {
     @IBOutlet weak var simpleTop: NSLayoutConstraint!
     @IBOutlet weak var simpleBottom: NSLayoutConstraint!
     @IBOutlet weak var btnNoVibration: UIButton!
-    @IBOutlet weak var lblNoVibration: UILabel!
 
 
     override func viewDidLoad() {
@@ -35,7 +34,6 @@ class CustomTabbarVC: UIViewController {
         } else {
             UserDefaultManager.setBooleanToUserDefaults(value: true, key: "isWatchTutorial")
         }
-        self.lblNoVibration.text =  LocalizationSystem.sharedInstance.localizedStringForKey(key: "NO VIBRATION?", comment: "")
     }
     
     @objc func moveToTab() {

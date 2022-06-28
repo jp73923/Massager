@@ -12,6 +12,7 @@ class SettingVC: UIViewController {
     @IBOutlet weak var btnNoVibration: UIButton!
     @IBOutlet weak var btnRateApp: UIButton!
     @IBOutlet weak var btnShareApp: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class SettingVC: UIViewController {
         self.btnRateApp.layer.cornerRadius = 21.0
         self.btnShareApp.clipsToBounds = true
         self.btnShareApp.layer.cornerRadius = 21.0
+
         
         self.btnNoVibration.layer.borderColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0).cgColor
         self.btnNoVibration.layer.borderWidth = 2.0

@@ -37,12 +37,6 @@
                                             <action selector="btnSettingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWJ-SH-HXi"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO VIBRATION?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rS1-BF-Ji0">
-                                        <rect key="frame" x="251" y="5" width="148" height="40"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyl-jQ-6jN">
                                         <rect key="frame" x="251" y="5" width="148" height="40"/>
                                         <constraints>
@@ -51,6 +45,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="NO VIBRATION?"/>
                                         <connections>
                                             <action selector="btnVibrationVCAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsj-a1-VbD"/>
                                         </connections>
@@ -58,11 +53,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="rS1-BF-Ji0" firstAttribute="bottom" secondItem="zyl-jQ-6jN" secondAttribute="bottom" id="10x-N9-oWv"/>
-                                    <constraint firstItem="rS1-BF-Ji0" firstAttribute="leading" secondItem="zyl-jQ-6jN" secondAttribute="leading" id="1GF-ms-FLh"/>
-                                    <constraint firstItem="rS1-BF-Ji0" firstAttribute="trailing" secondItem="zyl-jQ-6jN" secondAttribute="trailing" id="6vv-uS-zjF"/>
                                     <constraint firstItem="Wjx-pm-Zc6" firstAttribute="leading" secondItem="grX-Vt-8e9" secondAttribute="leading" constant="15" id="crz-H5-ESj"/>
-                                    <constraint firstItem="rS1-BF-Ji0" firstAttribute="top" secondItem="zyl-jQ-6jN" secondAttribute="top" id="fPj-1V-uFn"/>
                                     <constraint firstAttribute="trailing" secondItem="zyl-jQ-6jN" secondAttribute="trailing" constant="15" id="jGt-7p-QeV"/>
                                     <constraint firstItem="zyl-jQ-6jN" firstAttribute="centerY" secondItem="grX-Vt-8e9" secondAttribute="centerY" id="mvS-Ne-gaW"/>
                                     <constraint firstAttribute="height" constant="50" id="vQN-Mi-zD0"/>
@@ -276,7 +267,6 @@
                     <navigationItem key="navigationItem" id="8vS-ja-LzA"/>
                     <connections>
                         <outlet property="btnNoVibration" destination="zyl-jQ-6jN" id="q0C-vg-ZbJ"/>
-                        <outlet property="lblNoVibration" destination="rS1-BF-Ji0" id="wMB-jh-LBt"/>
                         <outlet property="leadingSelector" destination="FXy-ni-aM1" id="7Se-1O-OK1"/>
                         <outlet property="mainBottom" destination="wYT-Bc-a94" id="IwJ-c9-Klt"/>
                         <outlet property="mainTop" destination="26D-Wz-qP1" id="ujm-JZ-uRk"/>
@@ -1049,16 +1039,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiY-7g-jXZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO VIBRATION?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7In-Y3-SUe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
-                                                        <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91e-04-5nN">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" red="0.97647058823529409" green="0.40784313725490196" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="42" id="AwB-Pp-Mce"/>
                                                         </constraints>
@@ -1072,32 +1055,21 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="91e-04-5nN" secondAttribute="bottom" id="37n-HQ-elG"/>
-                                                    <constraint firstItem="7In-Y3-SUe" firstAttribute="top" secondItem="WiY-7g-jXZ" secondAttribute="top" id="6Hx-xB-krj"/>
                                                     <constraint firstAttribute="trailing" secondItem="91e-04-5nN" secondAttribute="trailing" id="8Oy-ey-w0Z"/>
-                                                    <constraint firstAttribute="bottom" secondItem="7In-Y3-SUe" secondAttribute="bottom" id="KCT-aP-tJN"/>
                                                     <constraint firstAttribute="height" constant="42" id="WA1-hY-vem"/>
                                                     <constraint firstItem="91e-04-5nN" firstAttribute="leading" secondItem="WiY-7g-jXZ" secondAttribute="leading" id="c1x-mJ-1FO"/>
                                                     <constraint firstItem="91e-04-5nN" firstAttribute="top" secondItem="WiY-7g-jXZ" secondAttribute="top" id="eYR-T7-I6R"/>
-                                                    <constraint firstAttribute="trailing" secondItem="7In-Y3-SUe" secondAttribute="trailing" id="gpa-iT-c98"/>
-                                                    <constraint firstItem="7In-Y3-SUe" firstAttribute="leading" secondItem="WiY-7g-jXZ" secondAttribute="leading" id="rOz-ht-d8e"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ypx-Bd-UNE">
                                                 <rect key="frame" x="0.0" y="62" width="384" height="42"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE RATE OUR APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dY-eb-nlb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
-                                                        <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCP-IZ-Aba">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="42" id="Zel-Ov-AHG"/>
                                                         </constraints>
@@ -1111,32 +1083,20 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="3dY-eb-nlb" secondAttribute="trailing" id="5Fb-UG-qJU"/>
-                                                    <constraint firstAttribute="bottom" secondItem="3dY-eb-nlb" secondAttribute="bottom" id="Auv-aU-qbP"/>
                                                     <constraint firstAttribute="bottom" secondItem="wCP-IZ-Aba" secondAttribute="bottom" id="Bdn-r2-7af"/>
                                                     <constraint firstItem="wCP-IZ-Aba" firstAttribute="leading" secondItem="Ypx-Bd-UNE" secondAttribute="leading" id="CPo-4q-vbC"/>
                                                     <constraint firstAttribute="trailing" secondItem="wCP-IZ-Aba" secondAttribute="trailing" id="Eml-vv-Ou7"/>
                                                     <constraint firstItem="wCP-IZ-Aba" firstAttribute="top" secondItem="Ypx-Bd-UNE" secondAttribute="top" id="U3E-jx-IzO"/>
-                                                    <constraint firstItem="3dY-eb-nlb" firstAttribute="top" secondItem="Ypx-Bd-UNE" secondAttribute="top" id="bVB-8S-1li"/>
-                                                    <constraint firstItem="3dY-eb-nlb" firstAttribute="leading" secondItem="Ypx-Bd-UNE" secondAttribute="leading" id="u8j-0r-lus"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1s-su-GUh">
                                                 <rect key="frame" x="0.0" y="124" width="384" height="42"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SHARE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyQ-Cs-39H">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-D0-u4B">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="42"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" red="0.97647058819999999" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="42" id="0M7-Vm-EiR"/>
                                                         </constraints>
@@ -1150,7 +1110,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="tIA-D0-u4B" secondAttribute="trailing" id="XQv-kb-ShF"/>
                                                     <constraint firstAttribute="bottom" secondItem="tIA-D0-u4B" secondAttribute="bottom" id="l3m-qH-q9l"/>
@@ -1699,41 +1659,11 @@ You can cancel subscription at any time.</string>
                                     <action selector="btnSubscribeAction:" destination="iUL-iQ-uA8" eventType="touchUpInside" id="tbo-SQ-o47"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Se-Hh-wjP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Se-Hh-wjP">
                                 <rect key="frame" x="30" y="677.5" width="354" height="124.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings. Any unused portion of a free trial period, will be forfeited when the user purchases a subscription to that publication, where applicable. </string>
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" metaFont="system"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Terms and conditions">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" metaFont="system"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" and the ">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" metaFont="system"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Privacy Policy">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" metaFont="system"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <string key="text">This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings. Any unused portion of a free trial period, will be forfeited when the user purchases a subscription to that publication, where applicable. Terms and conditions and the Privacy Policy</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eF5-Ow-n2K">
