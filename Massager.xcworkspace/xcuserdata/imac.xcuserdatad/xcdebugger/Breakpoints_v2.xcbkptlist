@@ -78,8 +78,8 @@
             filePath = "Massager/ViewControllers/MainVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
             landmarkName = "update5()"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "Massager/ViewControllers/MainVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
             landmarkName = "update3()"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "Massager/ViewControllers/MainVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
             landmarkName = "update4()"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,25 +126,25 @@
             filePath = "Massager/ViewControllers/MainVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "357"
-            endingLineNumber = "357"
-            landmarkName = "btnVibrationIntencityAction(_:)"
-            landmarkType = "7">
+            startingLineNumber = "380"
+            endingLineNumber = "380"
+            landmarkName = "MainVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FF381917-5CD9-41F3-912D-D2078FED84F1"
+            uuid = "5B02C109-BAA5-4E9D-8122-EA09DEAD7844"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Massager/ViewControllers/MainVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "patternVibration(patternType:)"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
+            landmarkName = "btnMoveToPattern(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
