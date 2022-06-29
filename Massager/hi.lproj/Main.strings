@@ -66,7 +66,7 @@
 "eou-nn-AAU.text" = "3 दिन मुफ़्त, फिर $5,49.00 प्रति सप्ताह।\nआप किसी भी समय सदस्यता रद्द कर सकते हैं।";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "gMG-Oe-35w"; */
-"gMG-Oe-35w.normalTitle" = "मैं";
+"gMG-Oe-35w.normalTitle" = "I";
 
 /* Class = "UILabel"; text = "NO VIBRATION?"; ObjectID = "gz4-ji-T7D"; */
 "gz4-ji-T7D.text" = "कोई कंपन नहीं?";
@@ -87,7 +87,7 @@
 "tIA-D0-u4B.normalTitle" = "शेयर करना";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "tMQ-ug-EPR"; */
-"tMQ-ug-EPR.normalTitle" = "मैं";
+"tMQ-ug-EPR.normalTitle" = "I";
 
 /* Class = "UILabel"; text = "Tap & hold to unlock"; ObjectID = "tX5-tE-agO"; */
 "tX5-tE-agO.text" = "अनलॉक करने के लिए टैप करके रखें";

@@ -66,7 +66,7 @@
 "eou-nn-AAU.text" = "3日間無料、その後は週$5,49.00。\nサブスクリプションはいつでもキャンセルできます。";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "gMG-Oe-35w"; */
-"gMG-Oe-35w.normalTitle" = "私";
+"gMG-Oe-35w.normalTitle" = "I";
 
 /* Class = "UILabel"; text = "NO VIBRATION?"; ObjectID = "gz4-ji-T7D"; */
 "gz4-ji-T7D.text" = "振動はありませんか？";
@@ -87,7 +87,7 @@
 "tIA-D0-u4B.normalTitle" = "シェア";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "tMQ-ug-EPR"; */
-"tMQ-ug-EPR.normalTitle" = "私";
+"tMQ-ug-EPR.normalTitle" = "I";
 
 /* Class = "UILabel"; text = "Tap & hold to unlock"; ObjectID = "tX5-tE-agO"; */
 "tX5-tE-agO.text" = "タップアンドホールドしてロックを解除します";

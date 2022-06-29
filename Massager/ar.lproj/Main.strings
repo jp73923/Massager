@@ -66,7 +66,7 @@
 "eou-nn-AAU.text" = "3 أيام مجانًا ، ثم 5،49.00 دولارًا أمريكيًا في الأسبوع. \ n يمكنك إلغاء الاشتراك في أي وقت.";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "gMG-Oe-35w"; */
-"gMG-Oe-35w.normalTitle" = "أنا";
+"gMG-Oe-35w.normalTitle" = "I";
 
 /* Class = "UILabel"; text = "NO VIBRATION?"; ObjectID = "gz4-ji-T7D"; */
 "gz4-ji-T7D.text" = "لا اهتزاز؟";

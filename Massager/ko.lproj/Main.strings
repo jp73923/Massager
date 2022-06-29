@@ -66,7 +66,7 @@
 "eou-nn-AAU.text" = "3일 무료 후 주당 $5,49.00.\n언제든지 구독을 취소할 수 있습니다.";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "gMG-Oe-35w"; */
-"gMG-Oe-35w.normalTitle" = "나";
+"gMG-Oe-35w.normalTitle" = "I";
 
 /* Class = "UILabel"; text = "NO VIBRATION?"; ObjectID = "gz4-ji-T7D"; */
 "gz4-ji-T7D.text" = "진동이 없습니까?";
@@ -87,7 +87,7 @@
 "tIA-D0-u4B.normalTitle" = "공유하다";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "tMQ-ug-EPR"; */
-"tMQ-ug-EPR.normalTitle" = "나";
+"tMQ-ug-EPR.normalTitle" = "I";
 
 /* Class = "UILabel"; text = "Tap & hold to unlock"; ObjectID = "tX5-tE-agO"; */
 "tX5-tE-agO.text" = "잠금 해제하려면 길게 탭하세요.";

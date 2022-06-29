@@ -66,7 +66,7 @@
 "eou-nn-AAU.text" = "3 jours gratuits, puis 5 49,00 $ par semaine.\nVous pouvez annuler votre abonnement à tout moment.";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "gMG-Oe-35w"; */
-"gMG-Oe-35w.normalTitle" = "je";
+"gMG-Oe-35w.normalTitle" = "I";
 
 /* Class = "UILabel"; text = "NO VIBRATION?"; ObjectID = "gz4-ji-T7D"; */
 "gz4-ji-T7D.text" = "PAS DE VIBRATION ?";
@@ -87,7 +87,7 @@
 "tIA-D0-u4B.normalTitle" = "PARTAGER";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "tMQ-ug-EPR"; */
-"tMQ-ug-EPR.normalTitle" = "je";
+"tMQ-ug-EPR.normalTitle" = "I";
 
 /* Class = "UILabel"; text = "Tap & hold to unlock"; ObjectID = "tX5-tE-agO"; */
 "tX5-tE-agO.text" = "Appuyez et maintenez pour déverrouiller";
