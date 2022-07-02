@@ -14,6 +14,7 @@ class cellPattern:UICollectionViewCell {
     @IBOutlet weak var lblPattern: UILabel!
     @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var vwLock: UIView!
+    @IBOutlet weak var bgViewMain: UIView!
 }
 class PatternVC: UIViewController {
 
@@ -188,13 +189,17 @@ extension PatternVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollec
         cell.imgPattern.image = UIImage.init(named: arrPatternsImages[indexPath.row].lowercased())
         cell.bgView.layer.borderColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0).cgColor
         cell.bgView.layer.borderWidth = 5.0
-        cell.bgView.layer.cornerRadius = 15.0
+        cell.bgView.layer.cornerRadius = 20.0
+        cell.bgViewMain.layer.borderWidth = 5.0
+        cell.bgViewMain.layer.cornerRadius = 20.0
+        cell.bgViewMain.layer.borderColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0).cgColor
+        cell.bgViewMain.layer.borderWidth = 5.0
         if self.arrSelection[indexPath.row] == 1 {
             cell.bgView.backgroundColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 218.0/255.0, alpha: 1.0)
         } else {
             cell.bgView.backgroundColor = UIColor.clear
         }
-        cell.vwLock.layer.cornerRadius = 15.0
+        cell.vwLock.layer.cornerRadius = 20.0
         if indexPath.row < 5 {
             cell.vwLock.isHidden = true
         } else {

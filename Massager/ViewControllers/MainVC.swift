@@ -21,6 +21,8 @@ class MainVC: UIViewController {
     @IBOutlet weak var vwSliderSelection: UIView!
     @IBOutlet weak var silder: UISlider!
     @IBOutlet weak var btnSelectedPattern: UIButton!
+    @IBOutlet weak var imgbtnBg1: UIImageView!
+    @IBOutlet weak var imgbtnBg2: UIImageView!
 
     var vibrationTimer1 = Timer()
     var vibrationTimer2 = Timer()
@@ -44,6 +46,11 @@ class MainVC: UIViewController {
         bannerView.adSize = bannerSize
         bannerView.loadAd()
 
+        self.imgbtnBg1.clipsToBounds = true
+        self.imgbtnBg1.layer.cornerRadius = 40.0
+        self.imgbtnBg2.clipsToBounds = true
+        self.imgbtnBg2.layer.cornerRadius = 40.0
+        
         self.btn1.clipsToBounds = true
         self.btn1.layer.cornerRadius = 10.0
         self.btn2.clipsToBounds = true

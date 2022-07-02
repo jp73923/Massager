@@ -14,6 +14,8 @@ class SimpleVC: UIViewController {
     @IBOutlet weak var sliderVibration: UISlider!
     @IBOutlet weak var sliderPauseTime: UISlider!
   //  @IBOutlet weak var bannerView: APDBannerView!
+    @IBOutlet weak var imgbtnBg1: UIImageView!
+    @IBOutlet weak var imgbtnBg2: UIImageView!
 
     var vibrationTimer = Timer()
     var intensity = 1
@@ -28,6 +30,11 @@ class SimpleVC: UIViewController {
         let bannerSize = kAPDAdSize320x50
         bannerView.adSize = bannerSize
         bannerView.loadAd()*/
+        
+        self.imgbtnBg1.clipsToBounds = true
+        self.imgbtnBg1.layer.cornerRadius = 40.0
+        self.imgbtnBg2.clipsToBounds = true
+        self.imgbtnBg2.layer.cornerRadius = 40.0
         
         self.vwInputOutput.clipsToBounds = true
         self.vwInputOutput.layer.cornerRadius = self.vwInputOutput.frame.size.width/2
