@@ -46,7 +46,7 @@
                                             <constraint firstAttribute="height" constant="40" id="6FH-xW-OBE"/>
                                             <constraint firstAttribute="width" constant="148" id="ZCr-wz-lue"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="NO VIBRATION?"/>
                                         <connections>
@@ -101,6 +101,7 @@
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NND-gN-mFa">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <connections>
                                                             <action selector="btnPattternAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvZ-RS-Mxf"/>
@@ -141,6 +142,7 @@
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9c-mF-xHh">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <connections>
                                                             <action selector="btnVibrationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYX-Xm-p4Q"/>
@@ -181,6 +183,7 @@
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNr-UC-Kqt">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <connections>
                                                             <action selector="btnSimpleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dag-Ff-jPq"/>
@@ -597,7 +600,7 @@
                                     <action selector="sliderVibrationIntensityChanged:" destination="CRC-GE-wHh" eventType="valueChanged" id="sHh-SX-OdE"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.10000000000000001" maxValue="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="LVx-0m-F4W">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="0.01" maxValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="LVx-0m-F4W">
                                 <rect key="frame" x="18" y="598.5" width="378" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.98431372549999996" green="0.0" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -688,10 +691,10 @@
                                     <constraint firstAttribute="height" constant="50" id="ejZ-Nd-zNH"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap &amp; hold to unlock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tX5-tE-agO">
-                                <rect key="frame" x="129" y="457" width="156" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap &amp; hold to unlock" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tX5-tE-agO">
+                                <rect key="frame" x="129.5" y="457" width="155.5" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="bOF-LU-kV8"/>
+                                    <constraint firstAttribute="height" constant="50" id="bOF-LU-kV8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1131,7 +1134,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="42" id="Zel-Ov-AHG"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="PLEASE RATE OUR APP">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1352,7 +1355,7 @@ Settings -&gt; Sound -&gt; Turn on During a call or In silent mode</string>
                                             <constraint firstItem="oDY-IJ-if5" firstAttribute="top" secondItem="1Hr-tF-6Df" secondAttribute="bottom" id="zUl-Oa-sHP"/>
                                         </constraints>
                                     </view>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywH-bC-wke">
+                                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywH-bC-wke">
                                         <rect key="frame" x="15" y="145" width="384" height="55"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVt-3b-lLv">
@@ -1374,7 +1377,7 @@ Settings -&gt; Sound -&gt; Turn on During a call or In silent mode</string>
                                                             <constraint firstAttribute="width" constant="15" id="rPs-zm-J45"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZN-9X-8Un">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZN-9X-8Un">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="55"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
@@ -1519,17 +1522,6 @@ Intensity -&gt; Select maximum</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXK-aT-abW" userLabel="Welcome  To Vibrate">
-                                <rect key="frame" x="30" y="72" width="203" height="87"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="Tv6-Tr-OUm"/>
-                                </constraints>
-                                <string key="text">Welcome 
-To Vibrate</string>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nag-wf-oAI">
                                 <rect key="frame" x="30" y="751" width="148.5" height="61"/>
                                 <constraints>
@@ -1548,6 +1540,17 @@ Control Vibration!</string>
                                     <constraint firstAttribute="height" constant="128" id="xbZ-6w-gxU"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXK-aT-abW" userLabel="Welcome  To Vibrate">
+                                <rect key="frame" x="30" y="94" width="203" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="Tv6-Tr-OUm"/>
+                                </constraints>
+                                <string key="text">Welcome 
+To Vibrate</string>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DBh-Bz-gVK"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -1584,7 +1587,7 @@ Control Vibration!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rzp-4t-Wtq">
-                                <rect key="frame" x="30" y="356" width="354" height="184"/>
+                                <rect key="frame" x="30" y="390" width="354" height="116"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="🔥 Simple mode (select speed and press Start);" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bD-g6-581">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="48"/>
@@ -1598,8 +1601,8 @@ Control Vibration!</string>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="🔥 Custom mode(create your own unique vibration pattern);" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JJ-Bv-QLE">
-                                        <rect key="frame" x="0.0" y="136" width="354" height="48"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="🔥 Custom mode(create your own unique vibration pattern);" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JJ-Bv-QLE">
+                                        <rect key="frame" x="0.0" y="116" width="354" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1659,9 +1662,9 @@ Control Vibration!</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azo-cP-TPw">
-                                <rect key="frame" x="349" y="78" width="50" height="50"/>
+                                <rect key="frame" x="375" y="78" width="24" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="6lH-cH-ny7"/>
+                                    <constraint firstAttribute="height" constant="50" id="6lH-cH-ny7"/>
                                     <constraint firstAttribute="height" constant="50" id="r5g-VI-ZY6"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -1713,6 +1716,9 @@ You can cancel subscription at any time.</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozu-yT-2Zg">
                                 <rect key="frame" x="25" y="373" width="364" height="150"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="btnSubscribeAction:" destination="iUL-iQ-uA8" eventType="touchUpInside" id="tbo-SQ-o47"/>
                                 </connections>
@@ -1725,7 +1731,7 @@ You can cancel subscription at any time.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eF5-Ow-n2K">
-                                <rect key="frame" x="361.5" y="90.5" width="25" height="25"/>
+                                <rect key="frame" x="374.5" y="90.5" width="25" height="25"/>
                                 <color key="backgroundColor" red="0.44705882352941173" green="0.34509803921568627" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="6Ed-RE-2ko"/>
@@ -1733,7 +1739,7 @@ You can cancel subscription at any time.</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Po-lS-awk">
-                                <rect key="frame" x="361.5" y="90.5" width="25" height="25"/>
+                                <rect key="frame" x="374.5" y="90.5" width="25" height="25"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="GRl-rM-jGB"/>
@@ -1795,7 +1801,7 @@ You can cancel subscription at any time.</string>
                     <connections>
                         <outlet property="btnClose" destination="Azo-cP-TPw" id="CuX-0l-LkF"/>
                         <outlet property="lblCounter" destination="9Po-lS-awk" id="F4V-48-Xtn"/>
-                        <outlet property="lblPricingText" destination="eou-nn-AAU" id="oYw-0r-U4o"/>
+                        <outlet property="lblPricingText" destination="eou-nn-AAU" id="J5c-yy-cgb"/>
                         <outlet property="lblText" destination="1Se-Hh-wjP" id="4Fw-W8-0Is"/>
                         <outlet property="shrimmerView" destination="fkK-QI-Kpd" id="lOB-8L-aPj"/>
                         <outlet property="vwProgress" destination="eF5-Ow-n2K" id="d6Z-6d-tWs"/>

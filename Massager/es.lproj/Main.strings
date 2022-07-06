@@ -3,13 +3,13 @@
 "0bD-g6-581.text" = "🔥 Modo simple (seleccione la velocidad y presione Inicio);";
 
 /* Class = "UILabel"; text = "This is an Auto-rewable subscription. Payment is chaged to App Store Account at confirmation, Subscription is renewd unless turend off at least 24-hours before the periodsends, account will be charged for renewl as well. You can turn it off in your account Settings. Any unused portion of a free trial period, will be forfeited when the user purchases a subscription to that publication, where applicable. Terms and conditions and the Privacy Policy"; ObjectID = "1Se-Hh-wjP"; */
-"1Se-Hh-wjP.text" = "Esta es una suscripción autorrecargable. El pago se carga a la cuenta de App Store en el momento de la confirmación, la suscripción se renueva a menos que se cancele al menos 24 horas antes de que finalice el período, también se cobrará a la cuenta por la renovación. Puede desactivarlo en la configuración de su cuenta. Cualquier parte no utilizada de un período de prueba gratuito se perderá cuando el usuario compre una suscripción a esa publicación, cuando corresponda. Términos y condiciones y la Política de Privacidad";
+//"1Se-Hh-wjP.text" = "Esta es una suscripción autorrecargable. El pago se carga a la cuenta de App Store en el momento de la confirmación, la suscripción se renueva a menos que se cancele al menos 24 horas antes de que finalice el período, también se cobrará a la cuenta por la renovación. Puede desactivarlo en la configuración de su cuenta. Cualquier parte no utilizada de un período de prueba gratuito se perderá cuando el usuario compre una suscripción a esa publicación, cuando corresponda. Términos y condiciones y la Política de Privacidad";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1TF-SB-UKe"; */
 "1TF-SB-UKe.normalTitle" = "Botón";
 
 /* Class = "UILabel"; text = "- Unlock custom mode for absoulute vibration control"; ObjectID = "28m-1t-h18"; */
-"28m-1t-h18.text" = "- Desbloquee el modo personalizado para un control de vibración absoluto";
+//"28m-1t-h18.text" = "- Desbloquee el modo personalizado para un control de vibración absoluto";
 
 /* Class = "UILabel"; text = "WANT IT STRONGER?"; ObjectID = "5M0-83-a9s"; */
 "5M0-83-a9s.text" = "¿LO QUIERES MÁS FUERTE?";
@@ -27,7 +27,7 @@
 "91e-04-5nN.normalTitle" = "¿SIN VIBRACIÓN?";
 
 /* Class = "UILabel"; text = "SUBSCRIBE"; ObjectID = "999-gg-YEf"; */
-"999-gg-YEf.text" = "SUSCRIBIR";
+//"999-gg-YEf.text" = "SUSCRIBIR";
 
 /* Class = "UILabel"; text = "5"; ObjectID = "9Po-lS-awk"; */
 "9Po-lS-awk.text" = "5";
@@ -63,7 +63,7 @@
 "diI-4a-j0h.text" = "Vibración";
 
 /* Class = "UILabel"; text = "3 days free, then $5,49.00 per week.\nYou can cancel subscription at any time."; ObjectID = "eou-nn-AAU"; */
-"eou-nn-AAU.text" = "3 días gratis, luego $5,49.00 por semana.\nPuede cancelar la suscripción en cualquier momento.";
+//"eou-nn-AAU.text" = "3 días gratis, luego $5,49.00 por semana.\nPuede cancelar la suscripción en cualquier momento.";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "gMG-Oe-35w"; */
 "gMG-Oe-35w.normalTitle" = "I";
@@ -72,7 +72,7 @@
 "gz4-ji-T7D.text" = "SIN VIBRACION?";
 
 /* Class = "UILabel"; text = "- Remove popup and banned ads"; ObjectID = "hjI-4C-AvB"; */
-"hjI-4C-AvB.text" = "- Eliminar ventanas emergentes y anuncios prohibidos";
+//"hjI-4C-AvB.text" = "- Eliminar ventanas emergentes y anuncios prohibidos";
 
 /* Class = "UILabel"; text = "On some devices, the vibrarion strength can be changed in the settings.\nFor example:\nSettings -> Sounds and vibration -> Vibration\nIntensity -> Select maximum"; ObjectID = "m2D-ys-6Tj"; */
 "m2D-ys-6Tj.text" = "En algunos dispositivos, la fuerza de vibración se puede cambiar en la configuración.\nPor ejemplo:\nConfiguración -> Sonidos y vibración -> Vibración\nIntensidad -> Seleccionar máximo";
@@ -90,7 +90,7 @@
 "tMQ-ug-EPR.normalTitle" = "I";
 
 /* Class = "UILabel"; text = "Tap & hold to unlock"; ObjectID = "tX5-tE-agO"; */
-"tX5-tE-agO.text" = "Toca y mantén presionado para desbloquear";
+"tX5-tE-agO.text" = "Toca y mantén presionado\n para desbloquear";
 
 /* Class = "UILabel"; text = "🔥 User Mode (select speed, intensity, and pause between vibrations);"; ObjectID = "u26-LC-14j"; */
 "u26-LC-14j.text" = "🔥 Modo Usuario (seleccione velocidad, intensidad y pausa entre vibraciones);";
@@ -111,4 +111,4 @@
 "zyl-jQ-6jN.normalTitle" = "¿SIN VIBRACIÓN?";
 
 /* Class = "UILabel"; text = "Become Diamond"; ObjectID = "zyq-GX-JoH"; */
-"zyq-GX-JoH.text" = "Conviértete en Diamante";
+//"zyq-GX-JoH.text" = "Conviértete en Diamante";

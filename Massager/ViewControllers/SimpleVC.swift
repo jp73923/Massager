@@ -19,7 +19,7 @@ class SimpleVC: UIViewController {
 
     var vibrationTimer = Timer()
     var intensity = 1
-    var pauseTime = 0.1
+    var pauseTime = 0.01
     var vibrationOn = false
     
     @IBOutlet var lockButton: FaveButton?
