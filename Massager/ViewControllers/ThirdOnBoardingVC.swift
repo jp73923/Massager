@@ -23,6 +23,7 @@ class ThirdOnBoardingVC: UIViewController {
     @IBOutlet weak var btnClose: UIButton!
     @IBOutlet weak var shrimmerView: ShimmerView!
     @IBOutlet weak var lblText: UILabel!
+    @IBOutlet weak var lblPricingText: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,13 @@ class ThirdOnBoardingVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapLabel(tap:)))
         self.lblText.addGestureRecognizer(tap)
         self.lblText.isUserInteractionEnabled = true
+        InAppPurchase.sharedInstance.buyAutorenewableSubscription()
+        NotificationCenter.default.addObserver(self, selector: #selector(gettingPrice), name: Notification.Name("gettingPriceLocaleWise"), object: nil)
+    }
+    @objc func gettingPrice() {
+        DispatchQueue.main.async {
+            self.lblPricingText.text = "3 days free, then \(APP_DELEGATE.strPriceOfLocale) per week.\nYou can cancel subscription at any time."
+        }
     }
     @objc func tapLabel(tap:UIGestureRecognizer) {
         if tap.location(in: self.view).y > 550 {

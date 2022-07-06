@@ -1795,6 +1795,7 @@ You can cancel subscription at any time.</string>
                     <connections>
                         <outlet property="btnClose" destination="Azo-cP-TPw" id="CuX-0l-LkF"/>
                         <outlet property="lblCounter" destination="9Po-lS-awk" id="F4V-48-Xtn"/>
+                        <outlet property="lblPricingText" destination="eou-nn-AAU" id="oYw-0r-U4o"/>
                         <outlet property="lblText" destination="1Se-Hh-wjP" id="4Fw-W8-0Is"/>
                         <outlet property="shrimmerView" destination="fkK-QI-Kpd" id="lOB-8L-aPj"/>
                         <outlet property="vwProgress" destination="eF5-Ow-n2K" id="d6Z-6d-tWs"/>

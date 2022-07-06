@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var musicSelected = ""
     var musicExtensionSelected = ""
     var strSelectedPattern = "Hurricane"
+    var strPriceOfLocale = ""
 
     private struct AppodealConstants {
         static let key: String = "a14483d2951585a941294c8614069ed5284e5fdc0ea34a03"

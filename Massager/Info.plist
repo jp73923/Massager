@@ -527,5 +527,9 @@
 			<string>gta8lk7p23.skadnetwork</string>
 		</dict>
 	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
 </dict>
 </plist>

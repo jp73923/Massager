@@ -67,6 +67,15 @@ class InAppPurchase : NSObject, SKProductsRequestDelegate, SKPaymentTransactionO
 			print(validProduct.localizedDescription)
 			print(validProduct.price)
 			buyProduct(validProduct);
+            let purchasingProduct = response.products[0] as SKProduct
+            let numberFormatter = NumberFormatter()
+            numberFormatter.formatterBehavior = .behavior10_4
+            numberFormatter.numberStyle = .currency
+            numberFormatter.locale = purchasingProduct.priceLocale
+            if let price = numberFormatter.string(from: purchasingProduct.price) {
+                APP_DELEGATE.strPriceOfLocale = price
+                NotificationCenter.default.post(name: Notification.Name("gettingPriceLocaleWise"), object: nil)
+            }
 		}
 		else {
             DispatchQueue.main.async {
