@@ -25,6 +25,7 @@ class PatternVC: UIViewController {
     var arrPatterns = ["Hurricane","Whirlpool","Strom","Waterfall","Explosion","Balance","Wind","Snowflake","Volcano","Fire","Landslide","Rain","Sun"]
     var arrPatternsImages = ["Hurricane","Hurricane2","Wave","Waterfall","Explosion","Stones","Wind","Snowflake","Volcano","Danger","Landslide","Rain","Sun"]
     var arrSelection = [1,0,0,0,0,0,0,0,0,0,0,0,0]
+    var arrPurchasedPatterns = [1,1,1,1,1,0,0,0,0,0,0,0,0]
     var vibrationTimer = Timer()
     var isOnVibration = false
     var selectedPattern = 0
@@ -39,12 +40,26 @@ class PatternVC: UIViewController {
         self.vwInputOutput.layer.cornerRadius = 50.0
         
         NotificationCenter.default.addObserver(self, selector: #selector(tabChangedToPatternMain), name: Notification.Name("tabChangedToPatternMain"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(patternPurchsed), name: Notification.Name("purchasedPatterns"), object: nil)
+        
+        if UserDefaultManager.getBooleanFromUserDefaults(key: "isPlanPurchased") {
+            for i in 0 ..< self.arrPurchasedPatterns.count {
+                self.arrPurchasedPatterns[i] = 1
+            }
+            self.clvPattern.reloadData()
+        }
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.vibrationTimer.invalidate()
         Vibrator.shared.stopHaptic()
         Vibrator.shared.stopVibrate()
+    }
+    @objc func patternPurchsed() {
+        for i in 0 ..< self.arrPurchasedPatterns.count {
+            self.arrPurchasedPatterns[i] = 1
+        }
+        self.clvPattern.reloadData()
     }
     @objc func tabChangedToPatternMain() {
         self.vibrationTimer.invalidate()
@@ -200,18 +215,24 @@ extension PatternVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollec
             cell.bgView.backgroundColor = UIColor.clear
         }
         cell.vwLock.layer.cornerRadius = 20.0
-        if indexPath.row < 5 {
+        if self.arrPurchasedPatterns[indexPath.row] == 1 {
             cell.vwLock.isHidden = true
         } else {
             cell.vwLock.isHidden = false
         }
+       /* if indexPath.row < 5 {
+            cell.vwLock.isHidden = true
+        } else {
+            cell.vwLock.isHidden = false
+        }*/
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (collectionView.frame.size.width/3) - 10.0, height: (collectionView.frame.size.width/3) - 10.0)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row < 5 {
+        if self.arrPurchasedPatterns[indexPath.row] == 1 {
+            // if indexPath.row < 5 {
             if self.countThree == 3 {
                 self.countThree = 0
                 self.fullscreenAds()
@@ -250,5 +271,6 @@ extension PatternVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollec
             self.previousSelectionIndex = indexPath.row
             self.btnInputOutput.isSelected = true
         }
+        // }
     }
 }

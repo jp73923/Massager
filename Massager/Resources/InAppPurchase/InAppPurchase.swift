@@ -24,7 +24,7 @@ class InAppPurchase : NSObject, SKProductsRequestDelegate, SKPaymentTransactionO
 	let kInAppProductRestoredNotification  = "InAppProductRestoredNotification"
 	let kInAppPurchasingErrorNotification  = "InAppPurchasingErrorNotification"
 	
-	let autorenewableSubscriptionProductId =  "brilliant_user_sub" //"com.testing.autorenewablesubscription"
+	let autorenewableSubscriptionProductId =  "brilliant_user_sub"
     let secreatKey = "eb419414162e435d800f640f14944dc3"
 	
 	override init() {
@@ -88,7 +88,7 @@ class InAppPurchase : NSObject, SKProductsRequestDelegate, SKPaymentTransactionO
 	
 	func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
 		print("Received Payment Transaction Response from Apple");
-        DispatchQueue.main.async {
+        /*DispatchQueue.main.async {
             let alert = UIAlertController(title: nil, message: "Received Payment Transaction Response from Apple", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
             while let presentedViewController = APP_DELEGATE.window?.rootViewController?.presentedViewController {
@@ -96,7 +96,7 @@ class InAppPurchase : NSObject, SKProductsRequestDelegate, SKPaymentTransactionO
                 return
             }
             APP_DELEGATE.window?.rootViewController?.present(alert, animated: true, completion: nil)
-        }
+        }*/
 		
 		for transaction: AnyObject in transactions {
 			if let trans: SKPaymentTransaction = transaction as? SKPaymentTransaction {
@@ -106,10 +106,9 @@ class InAppPurchase : NSObject, SKProductsRequestDelegate, SKPaymentTransactionO
 					
 					savePurchasedProductIdentifier(trans.payment.productIdentifier)
 					SKPaymentQueue.default().finishTransaction(transaction as! SKPaymentTransaction)
-					NotificationCenter.default.post(name: Notification.Name(rawValue: kInAppProductPurchasedNotification), object: nil)
-					
+                    NotificationCenter.default.post(name: Notification.Name("purchasedPatterns"), object: nil)
+                    UserDefaultManager.setBooleanToUserDefaults(value: true, key: "isPlanPurchased")
 					receiptValidation()
-					
 					break
 					
 				case .failed:

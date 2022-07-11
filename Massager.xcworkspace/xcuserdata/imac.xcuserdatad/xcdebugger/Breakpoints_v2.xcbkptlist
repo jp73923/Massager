@@ -14,8 +14,8 @@
             filePath = "Massager/ViewControllers/PatternVC.swift"
             startingColumnNumber = "114"
             endingColumnNumber = "114"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "patternVibration(patternType:)"
             landmarkType = "7">
          </BreakpointContent>
